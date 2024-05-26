@@ -1,0 +1,86 @@
+.bubble {
+  position: relative;
+  /* display: flex; */
+  border-radius: 50%;
+  margin: 0;
+  padding: 30px;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F3E3C4;
+  z-index: 1;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.main_content {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.bubbleArrow {
+  height: 300px;
+  width: 200px;
+  position: fixed;
+  top: -90px;
+  left: 50px;
+  z-index: 0;
+  position: absolute;
+}
+
+.uvod h1 {
+  position: relative;
+  z-index: 2;
+}
+
+h3 {
+  font-family: "Original Surfer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.obrazek_volby {
+  display: none;
+}
+
+.obrazek_volby--bigscreen {
+  z-index: 1;
+  height: 180px;
+  width: 200px;
+  /* position: fixed; */
+  bottom: 0px;
+  left: 0;
+  position: absolute;
+}
+
+
+@media (max-width: 768px) {
+  .bubbleArrow {
+    display: none;
+  }
+
+  /* .main {
+    height: 100%;
+  } */
+
+  .bubble {
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .obrazek_volby {
+    display: block;
+  }
+
+  .obrazek_volby--bigscreen {
+    display: none;
+  }
+
+}

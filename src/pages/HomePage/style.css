@@ -1,13 +1,178 @@
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 4rem;
+body {
+  background-color: #D6B394;
+  /* margin-left: 40px;
+  margin-right: 40px; */
+  min-width: 400px;
+  padding: 0;
+  margin: 0;
+  /* padding-bottom: 200px; */
+  /* height: 100vh; */
 }
 
-.logo {
-  width: 10rem;
-  height: 10rem;
-  background-image: url(./img/rocket.svg);
-  background-size: contain;
+.main {
+  max-width: 900px;
+  background-color: #934324;
+  /* padding: 20px; */
+  margin: auto;
+  /* padding-top: 20px; */
+  height: 100vh;
+  -webkit-box-shadow: -1px 30px 50px 8px #3C2B14;
+  -moz-box-shadow: -1px 30px 50px 8px #3C2B14;
+  box-shadow: -1px 30px 50px 8px #3C2B14;
+  border-left: 0.5px solid #D6B394;
+  border-right: 0.5px solid #D6B394;
+  position: relative;
+}
+
+.text {
+  background-color: #F3E3C4;
+  /* background-size: contain; */
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  /* margin-bottom: 30px; */
+  padding-bottom: 30px;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.bottom-line {
+  height: 20px;
+  background-color: #934324;
+}
+
+h1 {
+  font-family: "Original Surfer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 100%;
+}
+
+
+
+.main_content {
+  text-align: center;
+  /* margin-bottom: 20px; */
+  padding: 10px 40px 10px 40px;
+  /* max-width: 80%; */
+}
+
+p {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+}
+
+a {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  border-radius: 10px;
+  color: azure;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.button_aboutUs,
+.button_aboutGame {
+  background-color: #3C2B14;
+  width: 180px;
+  height: 37px;
+  border-radius: 45px;
+  text-align: center;
+  /* padding-top: 15px; */
+  color: azure;
+  text-decoration: none;
+}
+
+.obrazek_volby {
+  height: 200px;
+  width: 215px;
+  /* position: fixed; */
+  bottom: 0px;
+  left: 0;
+  position: absolute;
+}
+
+/* .footer {
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+} */
+
+@media (max-width: 768px) {
+  body {
+    background-color: #934324;
+  }
+
+  .main {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding-bottom: 50px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .text {
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  p,
+  a {
+    font-size: 1.5em;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .button_aboutUs,
+  .button_aboutGame {
+    min-width: 40%;
+    margin-top: 20px;
+    /* margin-top: 30px; */
+  }
+
+  .obrazek_volby {
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* border: 0.5px solid #3C2B14; */
+    -webkit-box-shadow: 0px 10px 50px 8px #3C2B14;
+    -moz-box-shadow: 0px 10px 50px 8px #3C2B14;
+    /* box-shadow: -1px 30px 50px 8px #3C2B14; */
+    box-shadow: 0px 10px 50px 8px #3C2B14;
+  }
 }

@@ -1,0 +1,124 @@
+{
+  "rajcatovaVejceZPanve": {
+    "id": "rajcatovaVejceZPanve",
+    "title": "Rajčatová vejce z pánve",
+    "process": [
+      "1.Cibuli oloupejte a nakrájejte najemno. Česnek oloupejte a prolisujte.",
+      "2.Ve větší pánvi rozehřejte na středním plameni 2 lžíce oleje. Poté do pánve přidejte nakrájenou cibuli a opékejte 2⁠–⁠3 minuty na středním plameni.",
+      "3.Do pánve přidejte prolisovaný česnek a vše opékejte dalších 30⁠–⁠60 sekund.",
+      "4.Do pánve přilijte rajčata z plechovky, promíchejte, snižte plamen na mírný a celou směs nechte 8⁠–⁠10 minut probublávat.",
+      "5.Provařenou směs dochuťte solí a pepřem. Následně v ní vytvořte 4 důlky a do každého vyklepněte 1 vejce, které osolte a opepřete. Poté pánev přiklopte pokličkou a směs nechte vařit 5⁠–⁠7 minut na mírném plameni.",
+      "6.Mezitím si najemno nakrájejte bazalku.",
+      "7.Až se dovaří směs v pánvi a vejce budou hotová, posypte obsah pánve nastrouhaným parmazánem, pánev opět přiklopte pokličkou a zahřívejte ještě 30⁠–⁠60 sekund na mírném plameni, aby se parmazán rozpustil.",
+      "8.Pánev odstavte z plamene a hotovou směs posypte nakrájenou bazalkou a chilli vločkami. Poté ji rozdělte na 2 porce a ihned podávejte s pečivem. "
+    ],
+    "ingredients": [
+      {
+        "name": "cibule",
+        "amount": 1,
+        "unit": "ks"
+      },
+      {
+        "name": "česnek",
+        "amount": 2,
+        "unit": "ks"
+      },
+      {
+        "name": "olej",
+        "amount": 2,
+        "unit": "tableSpoon"
+      },
+      {
+        "name": "krájená rajčata z plechovky",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "vejce",
+        "amount": 4,
+        "unit": "ks"
+      },
+      {
+        "name": "čerstvá bazalka",
+        "amount": 1,
+        "unit": "hrst"
+      },
+      {
+        "name": "parmazán",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "chilli vločky",
+        "amount": 0.5,
+        "unit": "teaSpoon"
+      },
+      {
+        "name": "súl a pepř",
+        "amount": 0.5,
+        "unit": "teaSpoon"
+      }
+    ]
+  },
+
+  "zeleninovyKuskusSGrilovanymHermelinem": {
+    "id": "zeleninovyKuskusSGrilovanymHermelinem",
+    "title": "Zeleninový kuskus s grilovaným hermelínem",
+    "process": [
+      "1. Zapněte hroubu na 180°C.",
+      "2.V misce smícháte trochu oleje, sůl, oblíbené koření a bylinky.",
+      "3. Připravíte si alobal o velikosti cca 15x15 cm. Na alobal položíte hermelím a celý ho potřete kořenící směsí.",
+      "4.Hermelím zabalte do alobalu a takto zabalený ho položte na pekáček, který vložíte do rozehřáté trouby na cca 15 min.",
+      "5.Kuskus nasypte do misky, zalijete horkou vodou nebo vývarem a osolte. Nechte kukskus odpočívat pod pokličkou.",
+      "6. Nakrájejte si rajčata na menší kousky. Zeleninu z plechovky slijte (pokud použijete všechnu) nebo odeberte trochu bez nálevu.",
+      "7. Všechnu zeleninu smíchejte s hotovým kuskusem a přendejte na talíř. K němu přidejte propečený hermelím (bez alobalu) a podávejte."
+    ],
+    "ingredients": [
+      {
+        "name": "hermelín",
+        "amount": 1,
+        "unit": "ks"
+      },
+      {
+        "name": "kuskus",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "olej",
+        "amount": 2,
+        "unit": "tableSpoon"
+      },
+      {
+        "name": "horká voda nebo vývar",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "mix sterilizované zeleniny",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "sušená nebo čerstvá rajčata",
+        "amount": 4,
+        "unit": "ks"
+      },
+      {
+        "name": "koření dle vlastní chuti",
+        "amount": 1,
+        "unit": "teaSpoon"
+      },
+      {
+        "name": "sušené bylinky",
+        "amount": 1,
+        "unit": "teaSpoon"
+      },
+      {
+        "name": "sůl",
+        "amount": 0.25,
+        "unit": "teaSpoon"
+      }
+    ]
+  }
+}

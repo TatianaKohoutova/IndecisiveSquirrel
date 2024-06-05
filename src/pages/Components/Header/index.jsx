@@ -1,4 +1,5 @@
 import './menu.css';
+import '/global.css';
 
 export const Header = () => {
   return (

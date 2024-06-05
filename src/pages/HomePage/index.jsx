@@ -8,7 +8,7 @@ import '/global.css';
 export const HomePage = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Main />
       {/* <AboutUs />
       <AboutGame /> */}

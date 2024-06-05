@@ -5,11 +5,16 @@ import { HomePage } from './pages/HomePage';
 // import { AboutGame } from '../pages/AboutGame';
 // import { AboutUs } from '../pages/AboutUs';
 import './global.css';
+import { AboutGame } from './pages/AboutGame/game';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <HomePage />,
+  },
+  {
+    path: '/game',
+    element: <AboutGame />,
   },
 ]);
 

@@ -1,29 +1,7 @@
-body {
-  /* background-color: #934324; */
-  /* margin-left: 40px;
-  margin-right: 60px;
-  max-width: 100%; */
-}
-
-h1 {
-  /* font-family: "Original Surfer", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 5em;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  line-height: 100%;
-  padding-bottom: 15px; */
-}
-
-.text {
+.text,
+.details_aboutUs {
   background-color: #F3E3C4;
-  /* background-size: contain; */
   max-width: 100%;
-  /* height: auto; */
-  /* margin: auto; */
-  /* border-radius: 10px; */
   display: flex;
   padding-bottom: 0px;
 }
@@ -33,23 +11,54 @@ h1 {
   padding: 0;
 }
 
-
-
-p {
-  /* font-family: "Forum", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.7em;
-  padding: 40px; */
+.details_aboutUs {
+  padding: 0px;
+  margin: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
-a {
-  /* font-family: "Forum", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2em;
-  border: none; */
+.header_us {
+  display: flex;
+  justify-content: space-evenly;
 }
+
+.logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.us {
+  display: flex;
+  font-size: 0.8em;
+  justify-content: space-between;
+}
+
+.us>div {
+  flex: 1 1 33.33%;
+  margin: 0.5px;
+}
+
+.header_bara,
+.header_tana,
+.header_jana {
+  display: flex;
+  align-items: end;
+
+}
+
+.about_bara,
+.about_tana,
+.about_jana {
+  padding: 10px;
+}
+
 
 h3 {
   font-family: "Original Surfer", sans-serif;
@@ -114,5 +123,49 @@ h3 {
     -moz-box-shadow: 0px 10px 50px 8px #3C2B14;
     /* box-shadow: -1px 30px 50px 8px #3C2B14; */
     box-shadow: 0px 10px 50px 8px #3C2B14;
+  }
+}
+
+/* Media query pro tablety (například při šířce zařízení od 768px do 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .us {
+    flex-direction: column; /* Mění flex směr na vertikální */
+  }
+
+  .us > div {
+    flex: none; /* Zruší flex rozložení pro třetiny */
+    width: 100%; /* Každé dítě zabere celou šířku */
+    margin: 10px 0; /* Zvýší vertikální margin */
+  }
+
+  .logo {
+    width: 80px; /* Zmenší logo */
+    height: 80px; /* Zmenší logo */
+  }
+}
+
+/* Media query pro mobilní zařízení (například při šířce zařízení do 767px) */
+@media (max-width: 767px) {
+  .us {
+    flex-direction: column; /* Stejně jako pro tablety */
+  }
+
+  .us > div {
+    width: 100%; /* Každé dítě zabere celou šířku */
+    margin: 10px 0; /* Zvýší vertikální margin */
+  }
+
+  .header_us {
+    flex-direction: column; /* Změní směr na vertikální */
+    align-items: center; /* Zarovná položky na střed */
+  }
+
+  .logo {
+    margin-left: 0; /* Odebere levý margin, logo bude na střed */
+    margin-top: 10px; /* Zmenší horní margin */
+  }
+
+  .header_bara, .header_tana, .header_jana {
+    text-align: center; /* Zarovná text na střed */
   }
 }

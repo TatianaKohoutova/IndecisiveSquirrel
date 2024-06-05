@@ -6,6 +6,7 @@ import { HomePage } from './pages/HomePage';
 // import { AboutUs } from '../pages/AboutUs';
 import './global.css';
 import { AboutGame } from './pages/AboutGame/game';
+import { AboutUs } from './pages/AboutUs/about';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: '/game',
     element: <AboutGame />,
+  },
+  {
+    path: '/about',
+    element: <AboutUs />,
   },
 ]);
 

@@ -1,11 +1,13 @@
 import '/global.css';
+import './game.css';
 import { Header } from '../Components/Header';
 import { Footer } from '../Components/Footer';
 
 export const AboutGame = () => {
   return (
     <>
-    <Header/>
+      <Header />
+      
       <div className="uvod">
         <h1>Nerozhodná veverka</h1>
       </div>
@@ -28,12 +30,12 @@ export const AboutGame = () => {
           {/* <img src="../img/Volba.png" alt="Volba" className="obrazek_volby" /> */}
         </div>
       </div>
-      <img
+      {/* <img
         src="../img/Volba.png"
         alt="Volba"
         className="obrazek_volby--bigscreen"
-      />
-      <Footer/>
+      /> */}
+      <Footer />
     </>
   );
 };

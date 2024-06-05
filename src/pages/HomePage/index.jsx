@@ -9,7 +9,7 @@ export const HomePage = () => {
   return (
     <>
       <Header />
-      <Main/>
+      <Main />
       {/* <AboutUs />
       <AboutGame /> */}
       <Footer />

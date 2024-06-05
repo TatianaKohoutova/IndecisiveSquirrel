@@ -16,10 +16,10 @@ export const Main = () => {
               Tak pojďme na to.
             </p>
             <div className="buttons">
-              <a className="button_aboutUs" href="./AboutUs/about">
+              <a className="button_aboutUs" href="./about">
                 Kdo jsme?
               </a>
-              <a className="button_aboutGame" href="./AboutGame/game">
+              <a className="button_aboutGame" href="./game">
                 O co jde?
               </a>
             </div>

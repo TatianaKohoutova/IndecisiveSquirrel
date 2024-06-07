@@ -4,8 +4,7 @@ export const AboutUs = () => {
     <div className="main">
       <div className="header">
         <a href="/">
-          {' '}
-          <div className="logo"></div>{' '}
+          <div className="logo"></div>
         </a>
         <div className="menu">
           <div className="menu_item">

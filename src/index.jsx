@@ -7,6 +7,7 @@ import { HomePage } from './pages/HomePage';
 import './global.css';
 import { AboutGame } from './pages/AboutGame/game';
 import { AboutUs } from './pages/AboutUs/about';
+import { QuestionForm } from './pages/Components/QuestionForm';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/about',
     element: <AboutUs />,
+  },
+  {
+    path: '/questionForm',
+    element: <QuestionForm />,
   },
 ]);
 

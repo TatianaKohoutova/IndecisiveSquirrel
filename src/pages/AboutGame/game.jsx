@@ -2,6 +2,8 @@ import '/global.css';
 import './game.css';
 import { Header } from '../Components/Header';
 import { Footer } from '../Components/Footer';
+import { Header } from '../Components/Header';
+import { Footer } from '../Components/Footer';
 
 export const AboutGame = () => {
   return (
@@ -34,7 +36,9 @@ export const AboutGame = () => {
         alt="Volba"
         className="obrazek_volby--bigscreen"
       />
-      {/* <Footer /> */}
+      <div className="footer bottom-line">
+        <Footer />
+      </div>
     </div>
   );
 };

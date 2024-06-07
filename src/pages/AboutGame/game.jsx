@@ -1,43 +1,12 @@
 import '/global.css';
 import './game.css';
-// import { Header } from '../Components/Header';
-// import { Footer } from '../Components/Footer';
+import { Header } from '../Components/Header';
+import { Footer } from '../Components/Footer';
 
 export const AboutGame = () => {
   return (
     <div className="main">
-      <div className="header">
-        <a href="/">
-          {' '}
-          <div className="logo"></div>{' '}
-        </a>
-        <div className="menu">
-          <div className="menu_item">
-            <div className="nut"></div>
-            <a className="menu_HomePage" href="/">
-              Domů
-            </a>
-          </div>
-          <div className="menu_item">
-            <div className="nut"></div>
-            <a className="menu_aboutGame" href="./game">
-              O hře
-            </a>
-          </div>
-          <div className="menu_item">
-            <div className="nut"></div>
-            <a className="menu_aboutUs" href="./about">
-              O nás
-            </a>
-          </div>
-        </div>
-        <div className="hamburger-menu">
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
-        </div>
-      </div>
+      <Header />
       <div className="uvod">
         <h1>Nerozhodná veverka</h1>
       </div>
@@ -57,10 +26,6 @@ export const AboutGame = () => {
             pár svých zásob, které uvidíš po levém kraji. Přeji ti příjemnou
             zábavu a dobrou chuť.
           </p>
-          {/* <!-- <div className="tlacitka">
-          <a className="onas" href="./O nás/my.html">Kdo jste?</a>
-          <a className="ohre" href="./O hře/hra.html">O co jde?</a>
-          </div> --> */}
           <img src="../img/Volba.png" alt="Volba" className="obrazek_volby" />
         </div>
       </div>
@@ -69,9 +34,7 @@ export const AboutGame = () => {
         alt="Volba"
         className="obrazek_volby--bigscreen"
       />
-      <div className="footer bottom-line">
-        <p></p>
-      </div>
+      {/* <Footer /> */}
     </div>
   );
 };

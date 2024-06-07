@@ -1,7 +1,3 @@
-/* .header {
-  display: flex;
-} */
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -147,14 +143,14 @@
     margin-right: 20px;
   }
 
-  .menu.open {
+  .menu_open {
     display: flex;
     flex-direction: column;
     width: 200px;
     height: 100%;
   }
 
-  .line.open {
+  .line_open {
     background-color: #F3E3C4;
   }
 

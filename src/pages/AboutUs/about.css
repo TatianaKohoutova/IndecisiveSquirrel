@@ -6,6 +6,10 @@
   padding-bottom: 0px;
 }
 
+div .main {
+  height: 100%;
+}
+
 .main-content {
   margin: 0;
   padding: 0;
@@ -129,43 +133,45 @@ h3 {
 /* Media query pro tablety (například při šířce zařízení od 768px do 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
   .us {
-    flex-direction: column; /* Mění flex směr na vertikální */
+    flex-direction: column;
+    /* Mění flex směr na vertikální */
   }
 
-  .us > div {
-    flex: none; /* Zruší flex rozložení pro třetiny */
-    width: 100%; /* Každé dítě zabere celou šířku */
-    margin: 10px 0; /* Zvýší vertikální margin */
-  }
-
-  .logo {
-    width: 80px; /* Zmenší logo */
-    height: 80px; /* Zmenší logo */
+  .us>div {
+    flex: none;
+    /* Zruší flex rozložení pro třetiny */
+    width: 100%;
+    /* Každé dítě zabere celou šířku */
+    margin: 10px 0;
+    /* Zvýší vertikální margin */
   }
 }
 
 /* Media query pro mobilní zařízení (například při šířce zařízení do 767px) */
 @media (max-width: 767px) {
   .us {
-    flex-direction: column; /* Stejně jako pro tablety */
+    flex-direction: column;
+    /* Stejně jako pro tablety */
   }
 
-  .us > div {
-    width: 100%; /* Každé dítě zabere celou šířku */
-    margin: 10px 0; /* Zvýší vertikální margin */
+  .us>div {
+    width: 100%;
+    /* Každé dítě zabere celou šířku */
+    margin: 10px 0;
+    /* Zvýší vertikální margin */
   }
 
   .header_us {
-    flex-direction: column; /* Změní směr na vertikální */
-    align-items: center; /* Zarovná položky na střed */
+    flex-direction: column;
+    /* Změní směr na vertikální */
+    align-items: center;
+    /* Zarovná položky na střed */
   }
 
-  .logo {
-    margin-left: 0; /* Odebere levý margin, logo bude na střed */
-    margin-top: 10px; /* Zmenší horní margin */
-  }
-
-  .header_bara, .header_tana, .header_jana {
-    text-align: center; /* Zarovná text na střed */
+  .header_bara,
+  .header_tana,
+  .header_jana {
+    text-align: center;
+    /* Zarovná text na střed */
   }
 }

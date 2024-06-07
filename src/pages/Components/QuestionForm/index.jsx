@@ -1,5 +1,5 @@
 import './style.css';
-import { Header } from '../Header';
+import { Header } from '../Menu/menu';
 import { Footer } from '../Footer';
 
 export const QuestionForm = () => {

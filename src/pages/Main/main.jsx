@@ -1,12 +1,11 @@
 import '/global.css';
-import './style.css';
-import { Header } from '../Header';
+import './main.css';
+import { Header } from '../Components/Menu/menu';
 
 export const Main = () => {
   return (
     <>
-      <div className="main">
-        <Header />
+      <div>
         <div className="uvod">
           <h1>Nerozhodná veverka</h1>
         </div>
@@ -26,14 +25,13 @@ export const Main = () => {
                 O co jde?
               </a>
             </div>
-
           </div>
         </div>
         <img
-              src="../img/Volba.png"
-              alt="Volba"
-              className="obrazek_volby--bigscreen"
-            ></img>
+          src="../img/Volba.png"
+          alt="Volba"
+          className="obrazek_volby--bigscreen"
+        ></img>
       </div>
     </>
   );

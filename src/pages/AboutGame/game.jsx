@@ -1,12 +1,8 @@
-import '/global.css';
 import './game.css';
-import { Header } from '../Components/Header';
-import { Footer } from '../Components/Footer';
 
 export const AboutGame = () => {
   return (
-    <div className="main">
-      <Header />
+    <div>
       <div className="uvod">
         <h1>Nerozhodná veverka</h1>
       </div>
@@ -38,9 +34,7 @@ export const AboutGame = () => {
         alt="Volba"
         className="obrazek_volby--bigscreen"
       />
-      <div className="footer bottom-line">
-        <Footer />
-      </div>
+      <div className="footer bottom-line"></div>
     </div>
   );
 };

@@ -14,20 +14,32 @@ export const QuestionForm = () => {
         <div class="cardcontainer">
           <div class="container">
             <div class="card">
-              <div class="front">front</div>
-              <div class="back">back</div>
+              <div class="front">
+                <p>front image</p>
+              </div>
+              <div class="back">
+                <p>back description</p>
+              </div>
             </div>
           </div>
           <div class="container">
             <div class="card">
-              <div class="front">front</div>
-              <div class="back">back</div>
+              <div class="front">
+                <p>front image</p>
+              </div>
+              <div class="back">
+                <p>back description</p>
+              </div>
             </div>
           </div>
           <div class="container">
             <div class="card">
-              <div class="front">front</div>
-              <div class="back">back</div>
+              <div class="front">
+                <p>front image</p>
+              </div>
+              <div class="back">
+                <p>back description</p>
+              </div>
             </div>
           </div>
         </div>

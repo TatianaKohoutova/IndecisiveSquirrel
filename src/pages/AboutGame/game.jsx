@@ -22,10 +22,6 @@ export const AboutGame = () => {
             pár svých zásob, které uvidíš po levém kraji. Přeji ti příjemnou
             zábavu a dobrou chuť.
           </p>
-          {/* <!-- <div className="tlacitka">
-          <a className="onas" href="./O nás/my.html">Kdo jste?</a>
-          <a className="ohre" href="./O hře/hra.html">O co jde?</a>
-          </div> --> */}
           <img src="../img/Volba.png" alt="Volba" className="obrazek_volby" />
         </div>
       </div>

@@ -3,6 +3,7 @@ body {
   /* margin-left: 40px;
   margin-right: 40px; */
   min-width: 400px;
+  height: 100%;
   padding: 0;
   margin: 0;
   /* padding-bottom: 200px; */
@@ -15,7 +16,7 @@ body {
   /* padding: 20px; */
   margin: auto;
   /* padding-top: 20px; */
-  height: 100vh;
+  height: 100%;
   -webkit-box-shadow: -1px 30px 50px 8px #3C2B14;
   -moz-box-shadow: -1px 30px 50px 8px #3C2B14;
   box-shadow: -1px 30px 50px 8px #3C2B14;

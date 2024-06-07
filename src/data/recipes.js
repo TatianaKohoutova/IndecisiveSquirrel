@@ -202,4 +202,56 @@ export const recipes = {
       { name: 'kopr nebo oregano', amount: 2, unit: 'teaSpoon' },
     ],
   },
+  palacinky: {
+    id: 'palacinky',
+    title: 'Palačinky',
+    process: [
+      'Hladkou mouku rozmixujeme se špetkou soli, mlékem a dvěma vejci tak, aby vznikla správná hustá směs vhodná pro palačinky (ani řídká, ani moc hustá).',
+      'Na pánev s rozpáleným olejem vlijeme přibližně jednu malou naběračku směsi. Palačinku smažíme z obou dvou stran dozlatova.',
+      'Na hotové palačinky naneseme libovolné množství čehokoliv, co nám chutná. Vhodné jsou marmelády, tvaroh, pudink nebo rozpuštěná čokoláda.',
+    ],
+    ingredients: [
+      { name: 'sůl', amount: 1, unit: 'špetka' },
+      { name: 'vejce', amount: 1, unit: 'ks' },
+      { name: 'mléko', amount: 200, unit: 'ml' },
+      { name: 'hladká mouka', amount: 100, unit: 'g' },
+      { name: 'olej', amount: 2, unit: 'tableSpoon' },
+    ],
+  },
+  krupicovaKase: {
+    id: 'krupicovaKase',
+    title: 'Krupicová kaše',
+    process: [
+      'Hrnek mléka nalijeme do hrnce, osolíme a pozvolna přivedeme k varu..',
+      'Přidáme lžíci másla a za stálého míchání pomalu přisypeme krupici. Stále mícháme, aby se netvořily hrudky.',
+      'Mírným varem ještě asi 2 minuty provaříme. Když je kaše moc hustá, přiléváme postupně mléko.',
+      'Hotovou kaši nalijeme do talíře, navrch dáme plátek másla a dochutíme podle chuti strávníků.',
+    ],
+    ingredients: [
+      { name: 'mléko', amount: 250, unit: 'ml' },
+      { name: 'dětská krupička', amount: 2, unit: 'tableSpoon' },
+      { name: 'máslo', amount: 1, unit: 'teaSpoon' },
+      { name: 'sůl', amount: 1, unit: 'špetka' },
+    ],
+  },
+  americkeLivance: {
+    id: 'americkeLivance',
+    title: 'Americké lívance',
+    process: [
+      'Ve velké míse smíchejte mouky, prášek do pečiva, moučkovéhý cukr a špetku soli.',
+      'Zadní stranou lžíce vytvořte uprostřed důlek a přidejte vejce, rozpuštěné máslo a mléko.',
+      'Vyšleháme do hladka.',
+      'Na velké nepřilnavé pánvi rozehřejte na středním plameni malý kousek másla a 1 lžičku oleje. Když máslo vypadá napěněné, nalijte do něj kolečka těsta o šířce asi 8 cm. Dejte pozor, abyste lívance nedávali příliš blízko k sobě, protože by se při vaření spojily. Lívance opékejte z jedné strany asi 1-2 minuty, nebo dokud se na povrchu nezačnou objevovat drobné bublinky. Lívance otočte a opékejte další minutu z druhé strany. Opakujte, dokud nespotřebujete všechno těsto.',
+      'Lívance servírujeme na talíř a pokapeme sirupem či medem (nejlépe javorovým) a jakoukoli vaší oblíbenou přísadou.',
+    ],
+    ingredients: [
+      { name: 'mléko', amount: 100, unit: 'ml' },
+      { name: 'hladká mouka', amount: 100, unit: 'g' },
+      { name: 'prášek do pečiva', amount: 1, unit: 'teaSpoon' },
+      { name: 'vejce', amount: 2, unit: 'ks' },
+      { name: 'rozpuštěné máslo', amount: 15, unit: 'g' },
+      { name: 'máslo', amount: 2, unit: 'teaSpoon' },
+      { name: 'olej', amount: 2, unit: 'tableSpoon' },
+    ],
+  },
 };

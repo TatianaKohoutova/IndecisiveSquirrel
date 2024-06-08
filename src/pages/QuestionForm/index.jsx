@@ -41,8 +41,6 @@ export const QuestionForm = () => {
                     </div>
                 </div>
             </div>
-
-            <div className="footer bottom-line"></div>
         </div>
     )
 }

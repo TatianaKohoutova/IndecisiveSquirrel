@@ -1,57 +1,29 @@
-import { useState } from 'react';
-import './menu.css';
-import '/global.css';
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import './menu.css'
+import { MenuItem } from '../MenuItem/menuItem'
 
 export const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false)
 
-  const handleClick = () => {
-    setMenuOpen(!menuOpen);
-  };
+    const handleClick = () => {
+        setMenuOpen(!menuOpen)
+    }
 
-  return (
-    <div className="header">
-      <a href="./">
-        <div className="logo"></div>
-      </a>
-      <div className={`menu ${menuOpen && 'menu_open'}`}>
-        <div className="menu_item">
-          <div className="nut"></div>
-          <a className="menu_HomePage" href="./">
-            Domů
-          </a>
+    return (
+        <div className="header">
+            <Link to="./" className="logo"></Link>
+            <div className={`menu ${menuOpen && 'menu_open'}`}>
+                <MenuItem link={'./'} text={'Domů'} handleClick={handleClick} />
+                <MenuItem link={'/game'} text={'O hře'} handleClick={handleClick} />
+                <MenuItem link={'./about'} text={'O nás'} handleClick={handleClick} />
+            </div>
+            <div className="hamburger-menu" onClick={handleClick}>
+                <div className={`line ${menuOpen && 'line_open'}`}></div>
+                <div className={`line ${menuOpen && 'line_open'}`}></div>
+                <div className={`line ${menuOpen && 'line_open'}`}></div>
+                <div className={`line ${menuOpen && 'line_open'}`}></div>
+            </div>
         </div>
-        <div className="menu_item">
-          <div className="nut"></div>
-          <a className="menu_aboutGame" href="/game">
-            O hře
-          </a>
-        </div>
-        <div className="menu_item">
-          <div className="nut"></div>
-          <a className="menu_aboutUs" href="./about">
-            O nás
-          </a>
-        </div>
-      </div>
-      <div className="hamburger-menu" onClick={handleClick}>
-        <div
-          className={`line ${menuOpen && 'line_open'}`}
-          onClick={handleClick}
-        ></div>
-        <div
-          className={`line ${menuOpen && 'line_open'}`}
-          onClick={handleClick}
-        ></div>
-        <div
-          className={`line ${menuOpen && 'line_open'}`}
-          onClick={handleClick}
-        ></div>
-        <div
-          className={`line ${menuOpen && 'line_open'}`}
-          onClick={handleClick}
-        ></div>
-      </div>
-    </div>
-  );
-};
+    )
+}

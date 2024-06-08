@@ -1,11 +1,11 @@
 export const AnswerCard = ({ description, img }) => {
     return (
-        <div class="container">
-            <div class="card">
-                <div class="front">
+        <div className="container">
+            <div className="card">
+                <div className="front">
                     <p>{img}</p>
                 </div>
-                <div class="back">
+                <div className="back">
                     <p>{description}</p>
                 </div>
             </div>

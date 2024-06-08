@@ -1,48 +1,20 @@
 import { useParams } from 'react-router-dom'
+import { AnswerCard } from '../Components/AnswerCard'
+
 import './style.css'
+import { questions } from './const'
 
 export const QuestionForm = () => {
     const { questionId } = useParams()
+    const { title, options } = questions[questionId]
 
     return (
-        <div>
-            <div className="uvod">
-                <h1>Nerozhodná veverka</h1>
-            </div>
-            <div className="question-form">
-                <h3>tady bude otázka</h3>
-                <div class="cardcontainer">
-                    <div class="container">
-                        <div class="card">
-                            <div class="front">
-                                <p>front image</p>
-                            </div>
-                            <div class="back">
-                                <p>back description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="card">
-                            <div class="front">
-                                <p>front image</p>
-                            </div>
-                            <div class="back">
-                                <p>back description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="card">
-                            <div class="front">
-                                <p>front image</p>
-                            </div>
-                            <div class="back">
-                                <p>back description</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div className="question-form">
+            <h3>{title}</h3>
+            <div className="cardcontainer">
+                {options.map(({ description, img }) => (
+                    <AnswerCard key={description} description={description} img={img} />
+                ))}
             </div>
         </div>
     )

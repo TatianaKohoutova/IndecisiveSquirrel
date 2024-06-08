@@ -12,8 +12,15 @@ export const QuestionForm = () => {
         <div className="question-form">
             <h3>{title}</h3>
             <div className="cardcontainer">
-                {options.map(({ description, img }) => (
-                    <AnswerCard key={description} description={description} img={img} />
+                {options.map(({ value, description, img }) => (
+                    <AnswerCard
+                        key={description}
+                        description={description}
+                        img={img}
+                        value={value}
+                        onClick={handleClick}
+                        id={id}
+                    />
                 ))}
             </div>
             {Number(questionId) === 0 ? null : (

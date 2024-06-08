@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './game.css'
 
 export const AboutGame = () => {
@@ -16,6 +17,9 @@ export const AboutGame = () => {
                         je ti nejbližší. A abys věděl, že se blížíš ke svému vysněnému receptu, propůjčím ti pár svých
                         zásob, které uvidíš po levém kraji. Přeji ti příjemnou zábavu a dobrou chuť.
                     </p>
+                    <Link className="button_play" to="/questionForm/0">
+                        Hrát hru
+                    </Link>
 
                     <img src="../img/Volba.png" alt="Volba" className="img_cornerSquirrel" />
                 </div>

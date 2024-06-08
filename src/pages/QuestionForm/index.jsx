@@ -1,11 +1,8 @@
 import './style.css';
-import { Header } from '../Menu/menu';
-import { Footer } from '../Footer';
 
 export const QuestionForm = () => {
   return (
     <div className="main">
-      <Header />
       <div className="uvod">
         <h1>Nerozhodná veverka</h1>
       </div>
@@ -45,9 +42,7 @@ export const QuestionForm = () => {
         </div>
       </div>
 
-      <div className="footer bottom-line">
-        <Footer />
-      </div>
+      <div className="footer bottom-line"></div>
     </div>
   );
 };

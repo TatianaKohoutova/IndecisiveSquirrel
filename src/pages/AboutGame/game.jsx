@@ -16,10 +16,12 @@ export const AboutGame = () => {
                         je ti nejbližší. A abys věděl, že se blížíš ke svému vysněnému receptu, propůjčím ti pár svých
                         zásob, které uvidíš po levém kraji. Přeji ti příjemnou zábavu a dobrou chuť.
                     </p>
+
                     <img src="../img/Volba.png" alt="Volba" className="img_cornerSquirrel" />
                 </div>
             </div>
             <img src="../img/Volba.png" alt="Volba" className="img_cornerSquirrel--bigscreen" />
+
             <div className="footer bottom-line"></div>
         </div>
     )

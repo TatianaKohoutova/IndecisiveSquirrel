@@ -8,12 +8,13 @@ export const QuestionForm = () => {
     const { questionId } = useParams()
     const { title, options } = questions[questionId]
 
+
     return (
         <div className="question-form">
             <h3>{title}</h3>
             <div className="cardcontainer">
-                {options.map(({ description, img }) => (
-                    <AnswerCard key={description} description={description} img={img} />
+                {options.map(({ value, description, img }) => (
+                    <AnswerCard key={description} description={description} img={img} value={value}/>
                 ))}
             </div>
         </div>

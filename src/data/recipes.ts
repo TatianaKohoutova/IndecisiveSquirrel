@@ -1,8 +1,11 @@
-import { Units, UnitsMap } from '../const'
+import { ActivityType, Type, Units, UnitsMap } from '../const'
 
 export const recipes = {
     rajcatovaVejceZPanve: {
         id: 'rajcatovaVejceZPanve',
+        type: Type.Vegetarian,
+        activity: ActivityType.Medium,
+        isLowCost: false,
         title: 'Rajčatová vejce z pánve',
         process: [
             'Cibuli oloupejte a nakrájejte najemno. Česnek oloupejte a prolisujte.',
@@ -28,6 +31,9 @@ export const recipes = {
     },
     zeleninovyKuskusSGrilovanymHermelinem: {
         id: 'zeleninovyKuskusSGrilovanymHermelinem',
+        type: Type.Vegetarian,
+        activity: ActivityType.Medium,
+        isLowCost: false,
         title: 'Zeleninový kuskus s grilovaným hermelínem',
         process: [
             'Zapněte hroubu na 180°C.',
@@ -52,6 +58,9 @@ export const recipes = {
     },
     testovinySPecenymSyremFeta: {
         id: 'testovinySPecenymSyremFeta',
+        type: Type.Vegetarian,
+        activity: ActivityType.Medium,
+        isLowCost: false,
         title: 'Těstoviny s pečeným sýrem feta',
         process: [
             'Troubu předehřejte na 200°C.',
@@ -75,6 +84,9 @@ export const recipes = {
     },
     parmazanoveKure: {
         id: 'parmazanoveKure',
+        type: Type.Meat,
+        activity: ActivityType.Active,
+        isLowCost: false,
         title: 'Parmazánové kuře',
         process: [
             'Nejprve si předehřejte troubu na 200–210 °C a připravte si zapékací nádobu (30 × 40) cm.',
@@ -98,6 +110,9 @@ export const recipes = {
     },
     rychleZapeceneChleby: {
         id: 'rychleZapeceneChleby',
+        type: Type.Meat,
+        activity: ActivityType.Active,
+        isLowCost: true,
         title: 'Rychlé zapečené chleby',
         process: [
             'Troubu nahřejeme na 200 °C.',
@@ -123,6 +138,9 @@ export const recipes = {
     },
     staroceskeZelniky: {
         id: 'staroceskeZelniky',
+        type: Type.Vegetarian,
+        activity: ActivityType.Active,
+        isLowCost: true,
         title: 'Staročeské zelníky',
         process: [
             'Brambory oloupeme a najemno nastrouháme. Vymačkáme z nich většinu vody.',
@@ -142,6 +160,9 @@ export const recipes = {
     },
     plneneToasty: {
         id: 'plneneToasty',
+        type: Type.Meat,
+        activity: ActivityType.Active,
+        isLowCost: true,
         title: 'Plněné toasty',
         process: [
             'Šunku nebo salám nakrájíme na drobné kousíčky. Sýr, šunku, vejce, česnek, hořčici a koření smícháme.',
@@ -163,6 +184,9 @@ export const recipes = {
     },
     salatZPolnickuARukoly: {
         id: 'salatZPolnickuARukoly',
+        type: Type.Vegetarian,
+        activity: ActivityType.Passive,
+        isLowCost: false,
         title: 'Salát z polníčku a rukoly',
         process: [
             'Vejce uvaříme na tvrdo, oloupeme, pokrájíme.',
@@ -184,6 +208,9 @@ export const recipes = {
     },
     smetanoveBramboryZPanve: {
         id: 'smetanoveBramboryZPanve',
+        type: Type.Vegetarian,
+        activity: ActivityType.Active,
+        isLowCost: false,
         title: 'Smetanové brambory z pánve',
         process: [
             'Brambory předem očistíme a uvaříme ve slupce do poloměkka. Studené oloupeme a nakrájíme na hrubší plátky.',
@@ -206,6 +233,9 @@ export const recipes = {
     },
     palacinky: {
         id: 'palacinky',
+        type: Type.Vegetarian,
+        activity: ActivityType.Active,
+        isLowCost: true,
         title: 'Palačinky',
         process: [
             'Hladkou mouku rozmixujeme se špetkou soli, mlékem a dvěma vejci tak, aby vznikla správná hustá směs vhodná pro palačinky (ani řídká, ani moc hustá).',
@@ -222,6 +252,9 @@ export const recipes = {
     },
     krupicovaKase: {
         id: 'krupicovaKase',
+        type: Type.Vegetarian,
+        activity: ActivityType.Active,
+        isLowCost: true,
         title: 'Krupicová kaše',
         process: [
             'Hrnek mléka nalijeme do hrnce, osolíme a pozvolna přivedeme k varu..',
@@ -238,6 +271,9 @@ export const recipes = {
     },
     americkeLivance: {
         id: 'americkeLivance',
+        type: Type.Vegetarian,
+        activity: ActivityType.Active,
+        isLowCost: true,
         title: 'Americké lívance',
         process: [
             'Ve velké míse smíchejte mouky, prášek do pečiva, moučkovéhý cukr a špetku soli.',

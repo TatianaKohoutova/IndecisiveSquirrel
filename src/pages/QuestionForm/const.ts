@@ -43,9 +43,9 @@ export const questions = [
         id: 'questionType',
         title: 'Jak typ jídla by ti pro dnešek vyhovoval?',
         options: [
-            { description: 'Veganské', img: '', value: '' },
-            { description: 'Vegetariánské', img: '', value: '' },
-            { description: 'Masové', img: '', value: '' },
+            { description: 'Veganské', img: '', value: Type.Vegan },
+            { description: 'Vegetariánské', img: '', value: Type.Vegetarian },
+            { description: 'Masové', img: '', value: Type.Meat },
         ],
     },
     {

@@ -10,13 +10,17 @@ body {
   /* height: 100vh; */
 }
 
+p,
+h1,
+h2,
+h3 {
+  color: #3C2B14;
+}
+
 .main {
   max-width: 900px;
   background-color: #934324;
-  /* padding: 20px; */
   margin: auto;
-  /* padding-top: 20px; */
-  /* height: 100%; */
   -webkit-box-shadow: -1px 30px 50px 8px #3C2B14;
   -moz-box-shadow: -1px 30px 50px 8px #3C2B14;
   box-shadow: -1px 30px 50px 8px #3C2B14;
@@ -138,7 +142,7 @@ a {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     border-left: none;
     border-right: none;
   }

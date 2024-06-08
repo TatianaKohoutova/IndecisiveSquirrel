@@ -1,7 +1,8 @@
-.main {
-  padding-bottom: 40px;
-}
-
 div .main_content {
   margin-bottom: 20px;
+}
+
+.button_aboutUs,
+.button_aboutGame {
+  color: #F3E3C4;
 }

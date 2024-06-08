@@ -1,5 +1,6 @@
 import './main.css'
 import { Header } from '../Components/Menu/menu'
+import { Link } from 'react-router-dom'
 
 export const Main = () => {
     return (
@@ -17,12 +18,12 @@ export const Main = () => {
                             Tak pojďme na to.
                         </p>
                         <div className="buttons">
-                            <a className="button_aboutUs" href="./about">
+                            <Link className="button_aboutUs" to="./about">
                                 Kdo jsme?
-                            </a>
-                            <a className="button_aboutGame" href="./game">
+                            </Link>
+                            <Link className="button_aboutGame" to="./game">
                                 O co jde?
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

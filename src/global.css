@@ -114,7 +114,7 @@ a {
   text-decoration: none;
 }
 
-.obrazek_volby {
+.img_cornerSquirrel {
   height: 200px;
   width: 215px;
   /* position: fixed; */
@@ -173,7 +173,7 @@ a {
     /* margin-top: 30px; */
   }
 
-  .obrazek_volby {
+  .img_cornerSquirrel {
     position: relative;
     border-radius: 50%;
     margin: auto;

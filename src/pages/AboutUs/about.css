@@ -24,15 +24,6 @@
   justify-content: space-evenly;
 }
 
-.logo {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
-  margin-left: 20px;
-  margin-top: 20px;
-  border-radius: 50%;
-}
 
 .us {
   display: flex;
@@ -90,20 +81,6 @@ h3 {
   p {
     font-size: 1.5em;
   }
-
-  /* .main {
-    height: 100vh;
-  } */
-
-  /* .background {
-    width: 100%;
-    /* min-width: 500px;} */
-
-  /* .img_onTheTree {
-    display: none;
-  } */
-
-
 }
 
 @media (max-width: 892px) {

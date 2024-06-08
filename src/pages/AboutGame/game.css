@@ -44,11 +44,11 @@ h3 {
   font-size: 1.5em;
 }
 
-.obrazek_volby {
+.img_cornerSquirrel {
   display: none;
 }
 
-.obrazek_volby--bigscreen {
+.img_cornerSquirrel--bigscreen {
   z-index: 1;
   height: 180px;
   width: 200px;
@@ -75,11 +75,11 @@ h3 {
     margin-right: 20px;
   }
 
-  .obrazek_volby {
+  .img_cornerSquirrel {
     display: block;
   }
 
-  .obrazek_volby--bigscreen {
+  .img_cornerSquirrel--bigscreen {
     display: none;
   }
 

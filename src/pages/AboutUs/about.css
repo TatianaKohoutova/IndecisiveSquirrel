@@ -12,11 +12,36 @@
   padding: 10px;
 }
 
+.photo {
+  padding: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header_us {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-self: center;
+}
 
 .details_aboutUs {
   padding: 0px;
   margin: 30px;
   border-radius: 10px;
+}
+
+.details_aboutUs {
+  background-color: #F3E3C4;
+  display: flex;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
 }
 
 .image_person {
@@ -30,6 +55,15 @@
   margin-right: 30px;
 }
 
+
+.about_person {
+  font-size: 1.2em;
+}
+
+.card_person {
+  min-width: 25vw;
+}
+
 h3 {
   font-family: "Original Surfer", sans-serif;
   font-weight: 400;
@@ -39,92 +73,23 @@ h3 {
 }
 
 .img_onTheTree {
-  max-width: 320px;
+  /* max-width: 320px;
   border-radius: 10px;
-  margin: 0;
-  padding: 0;
-  object-fit: cover
+  padding: 0; */
+  position: relative;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 10px 50px 8px #3C2B14;
+  -moz-box-shadow: 0px 10px 50px 8px #3C2B14;
+  box-shadow: 0px 10px 50px 8px #3C2B14;
+  height: 100%;
+  width: 320px;
+  align-self: auto;
+
 }
 
-@media (max-width: 768px) {
-
-  .details_aboutUs {
-    background-color: #F3E3C4;
-    display: flex;
-    padding-bottom: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
-  }
-
-  h1 {
-    font-size: 3em;
-  }
-
-  p {
-    font-size: 1.5em;
-  }
-
-
-  .details_aboutUs {
-    background-color: #F3E3C4;
-    display: flex;
-    padding-bottom: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
-  }
-
-  .about_person {
-    font-size: 1.2em;
-  }
-
-  .card_person {
-    min-width: 25vw;
-  }
-
-  .header_us {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-grow: 3;
-  }
-
-  .header_us {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    align-self: center;
-  }
-
-  .photo {
-    padding: auto;
-    display: flex;
-    align-items: center;
-  }
-
-  .img_onTheTree {
-    position: relative;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    -webkit-box-shadow: 0px 10px 50px 8px #3C2B14;
-    -moz-box-shadow: 0px 10px 50px 8px #3C2B14;
-    box-shadow: 0px 10px 50px 8px #3C2B14;
-    height: 100%;
-    width: 320px;
-    align-self: auto;
-  }
-}
 
 @media (min-width: 768px) {
 

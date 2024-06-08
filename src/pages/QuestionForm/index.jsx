@@ -1,6 +1,9 @@
+import { useParams } from 'react-router-dom'
 import './style.css'
 
 export const QuestionForm = () => {
+    const { questionId } = useParams()
+
     return (
         <div>
             <div className="uvod">

@@ -7,7 +7,7 @@ export const AboutUs = () => {
                 <h1>Nerozhodná veverka</h1>
             </div>
             <div className="main_div">
-                <div className="main_content_ab">
+                <div className="main_content_about">
                     <h3>O nás</h3>
                     <p className="main_paragraph">
                         Jsme tři poblázněné super holky jménem Bára, Táňa a Jana. I přesto, že naše cesty byly rozdílné,

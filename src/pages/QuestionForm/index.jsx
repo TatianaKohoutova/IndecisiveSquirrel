@@ -1,13 +1,13 @@
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { AnswerCard } from '../Components/AnswerCard'
-
-import './style.css'
 import { questions } from './const'
+import './style.css'
 
 export const QuestionForm = () => {
     const { questionId } = useParams()
     const { title, options } = questions[questionId]
-
+    const navigate = useNavigate()
+    const questionsCount = questions.length
     return (
         <div className="question-form">
             <h3>{title}</h3>
@@ -16,6 +16,30 @@ export const QuestionForm = () => {
                     <AnswerCard key={description} description={description} img={img} />
                 ))}
             </div>
+            {Number(questionId) === 0 ? null : (
+                <button
+                    className="button_back"
+                    aria-label="Předchozí"
+                    onClick={() => {
+                        navigate('/questionForm/' + (Number(questionId) - 1))
+                    }}
+                >
+                    Nazpět{' '}
+                </button>
+            )}
+            <button
+                className="button_forward"
+                aria-label="Nadcházející"
+                onClick={() => {
+                    if (Number(questionId) === questionsCount) {
+                        navigate('/recepy')
+                    } else {
+                        navigate('/questionForm/' + (Number(questionId) + 1))
+                    }
+                }}
+            >
+                Vpřed
+            </button>
         </div>
     )
 }

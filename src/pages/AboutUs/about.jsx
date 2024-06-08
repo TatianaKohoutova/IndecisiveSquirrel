@@ -6,10 +6,10 @@ export const AboutUs = () => {
             <div className="nadpis">
                 <h1>Nerozhodná veverka</h1>
             </div>
-            <div className="text">
+            <div className="main_div">
                 <div className="main_content">
                     <h3>O nás</h3>
-                    <p>
+                    <p className="main_paragraph">
                         Jsme tři poblázněné super holky jménem Bára, Táňa a Jana. I přesto, že naše cesty byly rozdílné,
                         přivedly nás ke společné zálibě – programování. Nyní spolu tvoříme úžasný projekt, do kterého
                         jsme se zamilovaly. Přesvědčte se, jak je skvělý.
@@ -23,7 +23,7 @@ export const AboutUs = () => {
             <div className="details_aboutUs">
                 <div className="card_person">
                     <div className="header_us">
-                        <img className="logo" src="../img/bara.jpg" alt="Bára" />
+                        <img className="image_person" src="../img/bara.jpg" alt="Bára" />
                         <h3 className="header_person">Barbora Tesařová</h3>
                     </div>
                     <p className="about_person">
@@ -34,7 +34,7 @@ export const AboutUs = () => {
                 </div>
                 <div className="card_person">
                     <div className="header_us">
-                        <img className="logo" src="../img/tana.JPG" alt="Táňa" />
+                        <img className="image_person" src="../img/tana.JPG" alt="Táňa" />
                         <h3 className="header_person">Tátiana Kohoutová</h3>
                     </div>
                     <p className="about_person">
@@ -45,7 +45,7 @@ export const AboutUs = () => {
                 </div>
                 <div className="card_person">
                     <div className="header_us">
-                        <img className="logo" src="../img/jana.JPG" alt="Jana" />
+                        <img className="image_person" src="../img/jana.JPG" alt="Jana" />
                         <h3 className="header_person">Jana Jarošová</h3>
                     </div>
                     <p className="about_person">

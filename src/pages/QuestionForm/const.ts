@@ -1,16 +1,16 @@
 import {
-  Calories,
-  CaloriesScale,
-  Taste,
-  TasteMap,
-  Spicy,
-  SpicyScale,
-  Type,
-  TypeMap,
-  ActivityType,
-  ActivityTypeTreshold,
-  Difficulty,
-  DifficultyMap,
+    Calories,
+    CaloriesScale,
+    Taste,
+    TasteMap,
+    Spicy,
+    SpicyScale,
+    Type,
+    TypeMap,
+    ActivityType,
+    ActivityTypeTreshold,
+    Difficulty,
+    DifficultyMap,
 } from '../../const'
 
 export const questions = {
@@ -18,71 +18,71 @@ export const questions = {
         id: 'questionTaste',
         title: 'Jaká je tvoje preferovaná chuť?',
         options: [
-            { name: 'Sladká', img: '', value: '' },
-            { name: 'Slaná', img: '', value: '' },
-            // {name:'Kyselá', img:'',}
+            { description: 'Sladká', img: '', value: '' },
+            { description: 'Slaná', img: '', value: '' },
+            // {description:'Kyselá', img:'',}
         ],
     },
     questionCalories: {
         id: 'questionCalories',
         title: 'Jak moc chceš dnes hřešit?',
         options: [
-            { name: 'Vůbec. Chci něco zdravého.', img: '', value: '' },
-            { name: 'Něco mezi.', img: '', value: '' },
-            { name: 'Dneska potřebuju prasárničku.', img: '', value: '' },
+            { description: 'Vůbec. Chci něco zdravého.', img: '', value: '' },
+            { description: 'Něco mezi.', img: '', value: '' },
+            { description: 'Dneska potřebuju prasárničku.', img: '', value: '' },
         ],
     },
     questionSpicy: {
         id: 'questionSpacy',
         title: 'Jak pálivé jídlo chceš?',
         options: [
-            { name: 'Chci nepálivé.', img: '', value: '' },
-            { name: 'Chci jemně pálivé.', img: '', value: '' },
-            { name: 'Středně pálivé.', img: '', value: '' },
-            { name: 'Miluju pálivé.', img: '', value: '' },
+            { description: 'Chci nepálivé.', img: '', value: '' },
+            { description: 'Chci jemně pálivé.', img: '', value: '' },
+            { description: 'Středně pálivé.', img: '', value: '' },
+            { description: 'Miluju pálivé.', img: '', value: '' },
         ],
     },
     questionType: {
-      id: 'questionType',
-      title: 'Jak typ jídla by ti pro dnešek vyhovoval?',
-      options: [
-          { name: 'Veganské', img: '', value: '' },
-          { name: 'Vegetariánské', img: '', value: '' },
-          { name: 'Masové', img: '', value: '' }
-      ],
-  },
-  questionActivity: {
-    id: 'questionActivity',
-    title: 'Jak jsi byl dneska aktivní?',
-    options: [
-        { name: 'Aktivní', img: '', value: '' },
-        { name: 'Středně', img: '', value: '' },
-        { name: 'Pasivní', img: '', value: '' }
-    ],
-},
-questionDifficulty: {
-  id: 'questionDifficulty',
-  title: 'Jakou náročnost receptu by jsi dneska preferoval?',
-  options: [
-      { name: 'Lehkou', img: '', value: '' },
-      { name: 'Střední', img: '', value: '' },
-      { name: 'Nebráním se něčemu náročnějšímu', img: '', value: '' }
-  ],
-},
-questionTime: {
-  id: 'questionTime',
-  title: 'Kolik máš času na vaření',
-  options: [
-      { name: 'Nemám moc času', img: '', value: '' },
-      { name: 'Jsem flexibilní', img: '', value: '' }
-  ],
-},
-questionMoney: {
-  id: 'questionMoney',
-  title: 'Chceš utrácet?',
-  options: [
-      { name: 'Chci něco úsporného', img: '', value: '' },
-      { name: 'Klidně si nějaké ingredience dokoupím', img: '', value: '' }
-  ],
-},
+        id: 'questionType',
+        title: 'Jak typ jídla by ti pro dnešek vyhovoval?',
+        options: [
+            { description: 'Veganské', img: '', value: '' },
+            { description: 'Vegetariánské', img: '', value: '' },
+            { description: 'Masové', img: '', value: '' },
+        ],
+    },
+    questionActivity: {
+        id: 'questionActivity',
+        title: 'Jak jsi byl dneska aktivní?',
+        options: [
+            { description: 'Aktivní', img: '', value: '' },
+            { description: 'Středně', img: '', value: '' },
+            { description: 'Pasivní', img: '', value: '' },
+        ],
+    },
+    questionDifficulty: {
+        id: 'questionDifficulty',
+        title: 'Jakou náročnost receptu by jsi dneska preferoval?',
+        options: [
+            { description: 'Lehkou', img: '', value: '' },
+            { description: 'Střední', img: '', value: '' },
+            { description: 'Nebráním se něčemu náročnějšímu', img: '', value: '' },
+        ],
+    },
+    questionTime: {
+        id: 'questionTime',
+        title: 'Kolik máš času na vaření',
+        options: [
+            { description: 'Nemám moc času', img: '', value: '' },
+            { description: 'Jsem flexibilní', img: '', value: '' },
+        ],
+    },
+    questionMoney: {
+        id: 'questionMoney',
+        title: 'Chceš utrácet?',
+        options: [
+            { description: 'Chci něco úsporného', img: '', value: '' },
+            { description: 'Klidně si nějaké ingredience dokoupím', img: '', value: '' },
+        ],
+    },
 }

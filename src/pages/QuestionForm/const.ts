@@ -52,9 +52,9 @@ export const questions = [
         id: 'questionActivity',
         title: 'Jak jsi byl dneska aktivní?',
         options: [
-            { description: 'Aktivní', img: '', value: '' },
-            { description: 'Středně', img: '', value: '' },
-            { description: 'Pasivní', img: '', value: '' },
+            { description: 'Aktivní', img: '', value: ActivityType.Active },
+            { description: 'Středně', img: '', value: ActivityType.Medium },
+            { description: 'Pasivní', img: '', value: ActivityType.Passive },
         ],
     },
 
@@ -78,8 +78,8 @@ export const questions = [
         id: 'questionMoney',
         title: 'Chceš utrácet?',
         options: [
-            { description: 'Chci něco úsporného', img: '', value: '' },
-            { description: 'Klidně si nějaké ingredience dokoupím', img: '', value: '' },
+            { description: 'Chci něco úsporného', img: '', value: true },
+            { description: 'Klidně si nějaké ingredience dokoupím', img: '', value: false },
         ],
     },
 ]

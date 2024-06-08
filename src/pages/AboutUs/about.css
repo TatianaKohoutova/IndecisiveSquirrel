@@ -70,10 +70,6 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  /* body {
-    min-width: 450px;
-  } */
-
   h1 {
     font-size: 3em;
   }

@@ -4,15 +4,8 @@
   flex-direction: column;
   font-size: 1em;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
+  margin: 30px 30px 0;
   border-radius: 10px;
-  gap: 10px;
-}
-
-.main_content {
-  margin: 10px;
 }
 
 .main_paragraph {
@@ -26,8 +19,6 @@
   border-radius: 10px;
 }
 
-<<<<<<< HEAD
-=======
 .image_person {
   background-size: contain;
   background-repeat: no-repeat;
@@ -39,7 +30,6 @@
   margin-right: 30px;
 }
 
->>>>>>> 711a758 (cssTryout2)
 h3 {
   font-family: "Original Surfer", sans-serif;
   font-weight: 400;
@@ -57,6 +47,18 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .details_aboutUs {
+    background-color: #F3E3C4;
+    display: flex;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
 
   h1 {
     font-size: 3em;
@@ -66,7 +68,7 @@ h3 {
     font-size: 1.5em;
   }
 
-<<<<<<< HEAD
+
   .details_aboutUs {
     background-color: #F3E3C4;
     display: flex;
@@ -94,16 +96,37 @@ h3 {
     flex-wrap: wrap;
     flex-grow: 3;
   }
-=======
-.header_us {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  align-self: center;
+
+  .header_us {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+
+  .photo {
+    padding: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .img_onTheTree {
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 10px 50px 8px #3C2B14;
+    -moz-box-shadow: 0px 10px 50px 8px #3C2B14;
+    box-shadow: 0px 10px 50px 8px #3C2B14;
+    height: 100%;
+    width: 320px;
+    align-self: auto;
+  }
 }
 
-@media (min-width: 520px) {
+@media (min-width: 768px) {
 
   .header_us {
     justify-content: start;
@@ -111,10 +134,12 @@ h3 {
 
   .main_div {
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
   }
 
-  .main_content {
+  .main_content_about {
     max-width: 400px;
     width: auto;
     flex: 0 0 60%;
@@ -125,9 +150,17 @@ h3 {
     flex-direction: column;
   }
 
-  .photo {
-    flex: 0 0 40%;
+  .img_onTheTree {
+    position: static;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: 100%;
+    width: 320px;
+    border-radius: 10px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
   }
 
->>>>>>> 711a758 (cssTryout2)
+
 }

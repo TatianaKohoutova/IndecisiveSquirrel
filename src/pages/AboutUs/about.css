@@ -1,55 +1,24 @@
-.text,
-.details_aboutUs {
+.text {
   background-color: #F3E3C4;
   max-width: 100%;
   display: flex;
   padding-bottom: 0px;
 }
 
-.main-content {
+.main_content {
   margin: 0;
   padding: 0;
+}
+
+.main_paragraph {
+  margin-left: 30px;
 }
 
 .details_aboutUs {
   padding: 0px;
   margin: 50px;
   border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
 }
-
-.header_us {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
-.us {
-  display: flex;
-  font-size: 0.8em;
-  justify-content: space-between;
-}
-
-.us>div {
-  flex: 1 1 33.33%;
-  margin: 0.5px;
-}
-
-.header_bara,
-.header_tana,
-.header_jana {
-  display: flex;
-  align-items: end;
-
-}
-
-.about_bara,
-.about_tana,
-.about_jana {
-  padding: 10px;
-}
-
 
 h3 {
   font-family: "Original Surfer", sans-serif;
@@ -58,7 +27,6 @@ h3 {
   text-align: center;
   font-size: 1.5em;
 }
-
 
 .img_onTheTree {
   height: 100%;
@@ -70,9 +38,6 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  /* body {
-    min-width: 450px;
-  } */
 
   h1 {
     font-size: 3em;
@@ -81,70 +46,32 @@ h3 {
   p {
     font-size: 1.5em;
   }
-}
 
-@media (max-width: 892px) {
-  .text {
-    flex-direction: column;
-    align-items: center;
+  .details_aboutUs {
+    background-color: #F3E3C4;
+    display: flex;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
   }
 
-  .img_onTheTree {
-    position: relative;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    /* border: 0.5px solid #3C2B14; */
-    -webkit-box-shadow: 0px 10px 50px 8px #3C2B14;
-    -moz-box-shadow: 0px 10px 50px 8px #3C2B14;
-    /* box-shadow: -1px 30px 50px 8px #3C2B14; */
-    box-shadow: 0px 10px 50px 8px #3C2B14;
-  }
-}
-
-/* Media query pro tablety (například při šířce zařízení od 768px do 1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
-  .us {
-    flex-direction: column;
-    /* Mění flex směr na vertikální */
+  .about_person {
+    font-size: 1.2em;
   }
 
-  .us>div {
-    flex: none;
-    /* Zruší flex rozložení pro třetiny */
-    width: 100%;
-    /* Každé dítě zabere celou šířku */
-    margin: 10px 0;
-    /* Zvýší vertikální margin */
-  }
-}
-
-/* Media query pro mobilní zařízení (například při šířce zařízení do 767px) */
-@media (max-width: 767px) {
-  .us {
-    flex-direction: column;
-    /* Stejně jako pro tablety */
-  }
-
-  .us>div {
-    width: 100%;
-    /* Každé dítě zabere celou šířku */
-    margin: 10px 0;
-    /* Zvýší vertikální margin */
+  .card_person {
+    min-width: 25vw;
   }
 
   .header_us {
-    flex-direction: column;
-    /* Změní směr na vertikální */
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    /* Zarovná položky na střed */
-  }
-
-  .header_bara,
-  .header_tana,
-  .header_jana {
-    text-align: center;
-    /* Zarovná text na střed */
+    flex-wrap: wrap;
+    flex-grow: 3;
   }
 }

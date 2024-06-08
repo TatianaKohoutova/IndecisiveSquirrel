@@ -14,7 +14,7 @@ import {
 } from '../../const'
 
 export const questions = [
-    //     id: 'questionTaste',
+    //     id: 'taste',
     //     title: 'Jaká je tvoje preferovaná chuť?',
     //     options: [
     //         { description: 'Sladká', img: '', value: '' },
@@ -22,7 +22,7 @@ export const questions = [
     //         // {description:'Kyselá', img:'',}
     //     ],
 
-    //     id: 'questionCalories',
+    //     id: 'calories',
     //     title: 'Jak moc chceš dnes hřešit?',
     //     options: [
     //         { description: 'Vůbec. Chci něco zdravého.', img: '', value: '' },
@@ -30,7 +30,7 @@ export const questions = [
     //         { description: 'Dneska potřebuju prasárničku.', img: '', value: '' },
     //     ],
 
-    //     id: 'questionSpacy',
+    //     id: 'spacy',
     //     title: 'Jak pálivé jídlo chceš?',
     //     options: [
     //         { description: 'Chci nepálivé.', img: '', value: '' },
@@ -40,7 +40,7 @@ export const questions = [
     //     ],
     // },
     {
-        id: 'questionType',
+        id: 'type',
         title: 'Jak typ jídla by ti pro dnešek vyhovoval?',
         options: [
             { description: 'Veganské', img: '', value: Type.Vegan },
@@ -49,7 +49,7 @@ export const questions = [
         ],
     },
     {
-        id: 'questionActivity',
+        id: 'activity',
         title: 'Jak jsi byl dneska aktivní?',
         options: [
             { description: 'Aktivní', img: '', value: ActivityType.Active },
@@ -58,7 +58,7 @@ export const questions = [
         ],
     },
 
-    //     id: 'questionDifficulty',
+    //     id: 'difficulty',
     //     title: 'Jakou náročnost receptu by jsi dneska preferoval?',
     //     options: [
     //         { description: 'Lehkou', img: '', value: '' },
@@ -67,7 +67,7 @@ export const questions = [
     //     ],
     // },
 
-    //     id: 'questionTime',
+    //     id: 'time',
     //     title: 'Kolik máš času na vaření',
     //     options: [
     //         { description: 'Nemám moc času', img: '', value: '' },
@@ -75,7 +75,7 @@ export const questions = [
     //     ],
     // },
     {
-        id: 'questionMoney',
+        id: 'isLowCost',
         title: 'Chceš utrácet?',
         options: [
             { description: 'Chci něco úsporného', img: '', value: true },

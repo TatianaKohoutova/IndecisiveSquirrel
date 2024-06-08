@@ -1,6 +1,6 @@
-export const AnswerCard = ({ description, img }) => {
+export const AnswerCard = ({ description, img, value, id, onClick }) => {
     return (
-        <div className="container">
+        <div className="container" onClick={() => onClick({ valueId: id, value })}>
             <div className="card">
                 <div className="front">
                     <p>{img}</p>

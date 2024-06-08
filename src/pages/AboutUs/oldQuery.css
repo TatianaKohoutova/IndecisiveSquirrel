@@ -1,0 +1,164 @@
+.text,
+.details_aboutUs {
+  background-color: #F3E3C4;
+  max-width: 100%;
+  display: flex;
+  padding-bottom: 0px;
+}
+
+.main-content {
+  margin: 0;
+  padding: 0;
+}
+
+.details_aboutUs {
+  padding: 0px;
+  margin: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header_us {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.us {
+  display: flex;
+  font-size: 0.8em;
+  justify-content: space-between;
+}
+
+.us>div {
+  flex: 1 1 33.33%;
+  margin: 0.5px;
+}
+
+.header_person {
+  display: flex;
+  align-items: end;
+
+}
+
+.about_person {
+  padding: 10px;
+}
+
+
+h3 {
+  font-family: "Original Surfer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+.img_onTheTree {
+  height: 100%;
+  width: 320px;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  object-fit: cover
+}
+
+@media (max-width: 768px) {
+  /* body {
+    min-width: 450px;
+  } */
+
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  /* .main {
+    height: 100vh;
+  } */
+
+  /* .background {
+    width: 100%;
+    /* min-width: 500px;} */
+
+  /* .img_onTheTree {
+    display: none;
+  } */
+
+
+}
+
+@media (max-width: 892px) {
+  .text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img_onTheTree {
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* border: 0.5px solid #3C2B14; */
+    -webkit-box-shadow: 0px 10px 50px 8px #3C2B14;
+    -moz-box-shadow: 0px 10px 50px 8px #3C2B14;
+    /* box-shadow: -1px 30px 50px 8px #3C2B14; */
+    box-shadow: 0px 10px 50px 8px #3C2B14;
+  }
+}
+
+/* Media query pro tablety (například při šířce zařízení od 768px do 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .us {
+    flex-direction: column;
+    /* Mění flex směr na vertikální */
+  }
+
+  .us>div {
+    flex: none;
+    /* Zruší flex rozložení pro třetiny */
+    width: 100%;
+    /* Každé dítě zabere celou šířku */
+    margin: 10px 0;
+    /* Zvýší vertikální margin */
+  }
+}
+
+/* Media query pro mobilní zařízení (například při šířce zařízení do 767px) */
+@media (max-width: 767px) {
+  .us {
+    flex-direction: column;
+    /* Stejně jako pro tablety */
+  }
+
+  .us>div {
+    width: 100%;
+    /* Každé dítě zabere celou šířku */
+    margin: 10px 0;
+    /* Zvýší vertikální margin */
+  }
+
+  .header_us {
+    flex-direction: column;
+    /* Změní směr na vertikální */
+    align-items: center;
+    /* Zarovná položky na střed */
+  }
+
+
+}

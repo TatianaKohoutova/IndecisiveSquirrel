@@ -88,6 +88,7 @@
 .recepy-additional__time,
 .recepy-additional__portions {
   display: flex;
+  align-items: center;
   flex-direction: row;
   gap: 20px;
   margin-top: 20px;
@@ -101,6 +102,18 @@ li {
   font-style: normal;
   font-size: 1.2em;
 }
+
+.recepy-additional__time>h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.recepy-additional__portions>h3 {
+  padding: 0;
+  margin: 0;
+}
+
+
 
 /* BUTTONS TO ADD OR REMOVE PORTION */
 

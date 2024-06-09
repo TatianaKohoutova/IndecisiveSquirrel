@@ -127,6 +127,7 @@ a {
   text-align: center;
   text-decoration: none;
   color: #F3E3C4;
+  text-wrap: nowrap;
 }
 
 .img_cornerSquirrel {

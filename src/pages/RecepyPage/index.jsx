@@ -40,21 +40,21 @@ export const RecepyPage = () => {
                     <div className="recepy_info_icons">
                         <div className="recepy-additional__time">
                             <img className="recepy-additional--watchImg" src="/img/watch.png" alt="Čas" />
-                            <p>
+                            <h3>
                                 {preparationTime} {timeUnit}
-                            </p>
+                            </h3>
                         </div>
                         <div className="recepy-additional__portions">
                             <img className="recepy-additional--portionImg" src="/img/pocetPorci.png" alt="Porce" />
-                            <p>{portions}</p>
+                            <h3>{portions}</h3>
                             <div className="btns"></div>
                         </div>{' '}
                         <div className="btn_navigation">
-                            <Button ariaLabel={'Ubrat porci'} handleClick={handleRemovePortion} name={'Ubrat porci'} />
+                            <Button ariaLabel={'Ubrat porci'} handleClick={handleRemovePortion} name={'-'} />
                             <Button
                                 ariaLabel={'Přidat porci'}
                                 handleClick={() => setPortions(portions + 1)}
-                                name={'Přidat porci'}
+                                name={'+'}
                             />
                         </div>
                     </div>

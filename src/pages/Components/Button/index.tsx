@@ -5,11 +5,12 @@ interface ButtonProps {
     ariaLabel: string
     handleClick: () => void
     name: string
+    disabled?: boolean
 }
 
-export const Button = ({ ariaLabel, handleClick, name }:ButtonProps) => {
+export const Button = ({ ariaLabel, handleClick, name, disabled }: ButtonProps) => {
     return (
-        <button className="btn" aria-label={ariaLabel} onClick={handleClick}>
+        <button className="btn button" aria-label={ariaLabel} onClick={handleClick} disabled={disabled}>
             {name}
         </button>
     )

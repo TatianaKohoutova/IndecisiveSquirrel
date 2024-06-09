@@ -2,21 +2,21 @@ import { useParams } from 'react-router-dom'
 import './index.css'
 import { recipes } from '../../data/recipes'
 import { useState } from 'react'
+import { Button } from '../Components/Button'
 
 export const RecepyPage = () => {
-    const [reply, setReply] = useState()
-
-    // reply = {
-    //   {
-    //     id: 1
-    //     value: spicy
-    //   },
-    //   {},
-    //   {},
-    //   {},
-    // }
-
     const { recepyId } = useParams()
+    const amountOfPortions = recipes[recepyId].portions
+    const amountOfIngredients = recipes[recepyId].ingredients.amount
+    const [reply, setReply] = useState()
+    const [portions, setPortions] = useState(amountOfPortions)
+    const handleRemovePortion = () => {
+        if (portions > 1) {
+            setPortions(portions - 1)
+        } else {
+            setPortions(portions)
+        }
+    }
 
     return (
         <div>
@@ -42,14 +42,23 @@ export const RecepyPage = () => {
                     </div>
                     <div className="recepy-additional__portions">
                         <img className="recepy-additional--portionImg" src="/img/pocetPorci.png" alt="" />
-                        <p>x 2</p>
-                    </div>
+                        <p>{portions}</p>
+                        <div className="btns"></div>
+                    </div>{' '}
+                    <span className="btn_navigation">
+                        <Button ariaLabel={'Ubrat porci'} handleClick={handleRemovePortion} name={'Ubrat porci'} />
+                        <Button
+                            ariaLabel={'Přidat porci'}
+                            handleClick={() => setPortions(portions + 1)}
+                            name={'Přidat porci'}
+                        />
+                    </span>
                     <div className="recepy-additional__ingridients">
                         <h3>Ingridience</h3>
                         <ul>
                             {recipes[recepyId].ingredients.map((list) => (
                                 <li key={list.name}>
-                                    {list.name} - {list.amount} {list.unit}
+                                    {list.name} - {(list.amount / amountOfPortions) * portions} {list.unit}
                                 </li>
                             ))}
                         </ul>

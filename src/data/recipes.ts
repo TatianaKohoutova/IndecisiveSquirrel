@@ -7,6 +7,7 @@ export const recipes = {
         activity: ActivityType.Medium,
         isLowCost: false,
         title: 'Rajčatová vejce z pánve',
+        portions: 2,
         process: [
             'Cibuli oloupejte a nakrájejte najemno. Česnek oloupejte a prolisujte.',
             'Ve větší pánvi rozehřejte na středním plameni 2 lžíce oleje. Poté do pánve přidejte nakrájenou cibuli a opékejte 2⁠–⁠3 minuty na středním plameni.',
@@ -35,6 +36,7 @@ export const recipes = {
         activity: ActivityType.Medium,
         isLowCost: false,
         title: 'Zeleninový kuskus s grilovaným hermelínem',
+        portions: 1,
         process: [
             'Zapněte hroubu na 180°C.',
             'V misce smícháte trochu oleje, sůl, oblíbené koření a bylinky.',
@@ -62,6 +64,7 @@ export const recipes = {
         activity: ActivityType.Medium,
         isLowCost: false,
         title: 'Těstoviny s pečeným sýrem feta',
+        portions: 4,
         process: [
             'Troubu předehřejte na 200°C.',
             'V zapékací míse smíchejte rajčata s 2 lžícemi olivového oleje, 1/2 lžičkou černého pepře a bílým vínem (víno můžete z receptu vynechat).',
@@ -88,6 +91,7 @@ export const recipes = {
         activity: ActivityType.Active,
         isLowCost: false,
         title: 'Parmazánové kuře',
+        portions: 3,
         process: [
             'Nejprve si předehřejte troubu na 200–210 °C a připravte si zapékací nádobu (30 × 40) cm.',
             'Kuřecí prsa omyjte, očistěte, osolte a opepřete. Na pánvi rozehřejte 1 lžíci olivového oleje na středním plameni. Až bude olej rozpálený, vložte do pánve kuřecí prsa a opékejte z každé strany 2–3 minuty na středním plameni. Opečená kuřecí prsa vyjměte z pánve a dejte stranou na pracovní plochu.',
@@ -114,6 +118,7 @@ export const recipes = {
         activity: ActivityType.Active,
         isLowCost: true,
         title: 'Rychlé zapečené chleby',
+        portions: 2,
         process: [
             'Troubu nahřejeme na 200 °C.',
             'Šunku, papriku a bílou část cibulky nakrájíme nadrobno.',
@@ -142,6 +147,7 @@ export const recipes = {
         activity: ActivityType.Active,
         isLowCost: true,
         title: 'Staročeské zelníky',
+        portions: 2,
         process: [
             'Brambory oloupeme a najemno nastrouháme. Vymačkáme z nich většinu vody.',
             'Okapané kysané zelí překrájíme a přidáme k nastrouhaným bramborám.',
@@ -164,6 +170,7 @@ export const recipes = {
         activity: ActivityType.Active,
         isLowCost: true,
         title: 'Plněné toasty',
+        portions: 2,
         process: [
             'Šunku nebo salám nakrájíme na drobné kousíčky. Sýr, šunku, vejce, česnek, hořčici a koření smícháme.',
             'Plátek chleba potřeme směsí a přiklopíme druhým plátkem. Slepené tousty namáčíme do rozšlehaných, lehce osolených vajec.',
@@ -188,6 +195,7 @@ export const recipes = {
         activity: ActivityType.Passive,
         isLowCost: false,
         title: 'Salát z polníčku a rukoly',
+        portions: 2,
         process: [
             'Vejce uvaříme na tvrdo, oloupeme, pokrájíme.',
             'Salát přebereme, umyjeme a osušíme.',
@@ -212,6 +220,7 @@ export const recipes = {
         activity: ActivityType.Active,
         isLowCost: false,
         title: 'Smetanové brambory z pánve',
+        portions: 2,
         process: [
             'Brambory předem očistíme a uvaříme ve slupce do poloměkka. Studené oloupeme a nakrájíme na hrubší plátky.',
             'Do větší pánve dáme rozehřát olej. Brambory posypeme kmínem a solí a opečeme do zlatova. Obsahem pánve jen prohazujeme, aby se brambory nepolámaly.',
@@ -237,6 +246,7 @@ export const recipes = {
         activity: ActivityType.Active,
         isLowCost: true,
         title: 'Palačinky',
+        portions: 2,
         process: [
             'Hladkou mouku rozmixujeme se špetkou soli, mlékem a dvěma vejci tak, aby vznikla správná hustá směs vhodná pro palačinky (ani řídká, ani moc hustá).',
             'Na pánev s rozpáleným olejem vlijeme přibližně jednu malou naběračku směsi. Palačinku smažíme z obou dvou stran dozlatova.',
@@ -256,6 +266,7 @@ export const recipes = {
         activity: ActivityType.Active,
         isLowCost: true,
         title: 'Krupicová kaše',
+        portions: 1,
         process: [
             'Hrnek mléka nalijeme do hrnce, osolíme a pozvolna přivedeme k varu..',
             'Přidáme lžíci másla a za stálého míchání pomalu přisypeme krupici. Stále mícháme, aby se netvořily hrudky.',
@@ -275,6 +286,7 @@ export const recipes = {
         activity: ActivityType.Active,
         isLowCost: true,
         title: 'Americké lívance',
+        portions: 2,
         process: [
             'Ve velké míse smíchejte mouky, prášek do pečiva, moučkovéhý cukr a špetku soli.',
             'Zadní stranou lžíce vytvořte uprostřed důlek a přidejte vejce, rozpuštěné máslo a mléko.',

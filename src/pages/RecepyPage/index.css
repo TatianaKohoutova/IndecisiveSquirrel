@@ -98,3 +98,9 @@ li {
   font-style: normal;
   font-size: 1.5em;
 }
+
+/* BUTTONS TO ADD OR REMOVE PORTION */
+
+.btn_navigation {
+  display: flex;
+}

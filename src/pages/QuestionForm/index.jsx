@@ -1,11 +1,13 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { AnswerCard } from '../Components/AnswerCard'
 import { Button } from '../Components/Button'
+import { Stepper } from '../Components/Stepper'
 import { questions } from './const'
 import { useState } from 'react'
 import { recipes } from '../../data/recipes'
 import { showSelectedRecepy } from './helpers'
 import './style.css'
+import { Step } from '../Components/Step'
 
 const defaultState = { taste: null, calories: null, type: null, isLowCost: null }
 
@@ -42,11 +44,10 @@ export const QuestionForm = () => {
         console.log(value)
     }
 
-    console.log(state)
-
     return (
         <div className="question-form">
             <h3>{title}</h3>
+            <Stepper />
             <div className="cardcontainer">
                 {options.map(({ value, description, img }) => (
                     <AnswerCard

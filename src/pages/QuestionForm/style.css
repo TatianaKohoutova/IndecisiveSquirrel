@@ -6,6 +6,7 @@ body {
 }
 
 .question-form {
+  position: relative;
   background-color: #F3E3C4;
   max-width: 100%;
   border-radius: 10px;
@@ -48,6 +49,7 @@ p {
 /* cards flip-over styles */
 
 .cardcontainer {
+  position: relative;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -151,5 +153,9 @@ p {
     font-size: 1.5em;
   }
 
+  .question-form {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 
 }

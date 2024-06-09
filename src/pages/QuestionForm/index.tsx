@@ -8,17 +8,22 @@ import { recipes } from '../../data/recipes'
 import { showSelectedRecepy } from './helpers'
 import './style.css'
 import { Step } from '../Components/Step'
+import React from 'react'
 
 const defaultState = { taste: null, calories: null, type: null, isLowCost: null }
 
 export const QuestionForm = () => {
     const { questionId } = useParams()
     const [state, setState] = useState(defaultState)
-    const { title, options, id } = questions[questionId]
+
     const navigate = useNavigate()
+    if (!questionId) {
+        return navigate('/')
+    }
+    const { title, options, id } = questions[questionId]
+
     const questionsCount = questions.length
     const [active, setActive] = useState(false)
-    const questionKey = state.questionId
 
     const handleForwardClick = () => {
         if (Number(questionId) === questionsCount) {

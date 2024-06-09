@@ -1,4 +1,5 @@
 import './style.css'
+import React from 'react'
 
 interface StepProps {
     isAnswered: boolean

@@ -67,8 +67,8 @@ export const questions = [
         id: 'isLowCost',
         title: 'Chceš utrácet?',
         options: [
-            { description: 'Chci něco úsporného', img: '', value: true },
-            { description: 'Klidně si nějaké ingredience dokoupím', img: '', value: false },
+            { description: 'Chci něco úsporného', img: '/img/ikons-questions/spending_money/Safe.png', value: true },
+            { description: 'Klidně si nějaké ingredience dokoupím', img: '/img/ikons-questions/spending_money/Spend.png', value: false },
         ],
     },
 ]

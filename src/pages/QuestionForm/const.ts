@@ -14,9 +14,9 @@ export const questions = [
         id: 'calories',
         title: 'Jak moc chceš dnes hřešit?',
         options: [
-            { description: 'Vůbec. Chci něco zdravého.', img: '', value: Calories.Low },
-            { description: 'Něco mezi.', img: '', value: Calories.Medium },
-            { description: 'Dneska potřebuju prasárničku.', img: '', value: Calories.High },
+            { description: 'Vůbec. Chci něco zdravého', img: '/img/ikons-questions/healthy_unhealthy/Healthy.png', value: Calories.Low },
+            { description: 'Něco mezi', img: '/img/ikons-questions/healthy_unhealthy/Medium.png', value: Calories.Medium },
+            { description: 'Dneska potřebuju prasárničku', img: '/img/ikons-questions/healthy_unhealthy/Unhealthy.png', value: Calories.High },
         ],
     },
     //     id: 'spacy',
@@ -33,8 +33,8 @@ export const questions = [
         title: 'Jak typ jídla by ti pro dnešek vyhovoval?',
         options: [
             // { description: 'Veganské', img: '', value: Type.Vegan },
-            { description: 'Vegetariánské', img: '', value: Type.Vegetarian },
-            { description: 'Masové', img: '', value: Type.Meat },
+            { description: 'Vegetariánské', img: '/img/ikons-questions/type/Vege.png', value: Type.Vegetarian },
+            { description: 'Masové', img: '/img/ikons-questions/type/Meat.png', value: Type.Meat },
         ],
     },
     {

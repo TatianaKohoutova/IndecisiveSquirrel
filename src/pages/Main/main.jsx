@@ -22,8 +22,9 @@ export const Main = () => {
                                 Kdo jsme?
                             </Link>
                             <Link className="button_aboutGame" to="./game">
-                                O co jde?
+                                Hrát hru
                             </Link>
+
                         </div>
                     </div>
                 </div>

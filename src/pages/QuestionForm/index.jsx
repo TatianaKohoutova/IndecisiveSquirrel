@@ -1,11 +1,20 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { AnswerCard } from '../Components/AnswerCard'
 import { questions } from './const'
+import { useState } from 'react'
 import './style.css'
+
+const defaultState = { type: null, activity: null, isLowCost: null }
 
 export const QuestionForm = () => {
     const { questionId } = useParams()
-    const { title, options } = questions[questionId]
+
+    const { title, options, id } = questions[questionId]
+    const [state, setState] = useState(defaultState)
+    const handleClick = ({ valueId, value }) => {
+        setState({ ...state, [valueId]: value })
+    }
+    console.log(state)
     const navigate = useNavigate()
     const questionsCount = questions.length
     return (

@@ -10,6 +10,7 @@ import { Footer } from './pages/Components/Footer'
 import { Main } from './pages/Main/main'
 import { RecepyPage } from './pages/RecepyPage'
 import { RecepyList } from './pages/Components/RecepyList'
+import ErrorPage from './pages/Components/ErrorPage'
 
 export const App = () => {
     const location = useLocation()
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
-        // errorElement: <ErrorPage />,
+        errorElement: <ErrorPage />,
         children: [
             { path: '/', element: <Main /> },
             { path: '/game', element: <AboutGame /> },
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
             { path: '/questionForm/:questionId', element: <QuestionForm /> },
             { path: '/questionForm', element: <QuestionForm /> },
             { path: '/recepy/:recepyId', element: <RecepyPage /> },
-            { path: '/recepyList', element: <RecepyList/>}
+            { path: '/recepyList', element: <RecepyList /> },
         ],
     },
 ])

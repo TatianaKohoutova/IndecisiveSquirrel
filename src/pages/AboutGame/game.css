@@ -43,6 +43,20 @@ h3 {
   font-size: 1.5em;
 }
 
+.button_play {
+  color: #F3E3C4;
+  background-color: #3C2B14;
+  width: 350px;
+  height: 37px;
+  border-radius: 45px;
+  text-align: center;
+  /* padding-top: 15px; */
+  color: azure;
+  text-decoration: none;
+}
+
+
+
 .img_cornerSquirrel {
   display: none;
 }

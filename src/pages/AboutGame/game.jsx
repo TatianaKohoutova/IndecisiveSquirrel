@@ -17,7 +17,7 @@ export const AboutGame = () => {
                         je ti nejbližší. A abys věděl, že se blížíš ke svému vysněnému receptu, propůjčím ti pár svých
                         zásob, které uvidíš po levém kraji. Přeji ti příjemnou zábavu a dobrou chuť.
                     </p>
-                    <Link className="button_play" to="/questionForm/0">
+                    <Link className=" button" to="/questionForm/0">
                         Hrát hru
                     </Link>
 

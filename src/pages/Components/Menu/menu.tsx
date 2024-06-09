@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './menu.css'
 import { MenuItem } from '../MenuItem/menuItem'
+import React from 'react'
 
 export const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)

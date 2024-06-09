@@ -24,10 +24,10 @@
 }
 
 .recepy-title {
-  font-size: 3em;
+
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: "Original Surfer", sans-serif;
+  font-family: "Titan One", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #934324;
@@ -95,10 +95,11 @@
 }
 
 li {
-  font-family: "Forum", serif;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 /* BUTTONS TO ADD OR REMOVE PORTION */

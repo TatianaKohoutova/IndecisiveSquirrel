@@ -8,7 +8,7 @@
 }
 
 .logo {
-  background-image: url("./img/Squirrel_logo.svg");
+  background-image: url("/img/Squirrel_logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
   flex-basis: 200px;
@@ -16,12 +16,13 @@
 }
 
 .logo:hover {
-  background-image: url("./img/Squirrel_logo_tong.svg");
+  background-image: url("/img/Squirrel_logo_tong.svg");
 }
 
 .menu {
   background-color: #F3E3C4;
   display: flex;
+  justify-content: space-around;
   align-self: center;
   border-radius: 10px;
   width: 100%;

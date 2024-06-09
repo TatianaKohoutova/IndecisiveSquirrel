@@ -25,26 +25,9 @@ body {
   background-color: #934324;
 }
 
-h1 {
-  font-family: "Original Surfer", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 3em;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  line-height: 100%;
-}
 
 
-p {
-  font-family: "Forum", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5em;
-}
+
 
 /* cards flip-over styles */
 
@@ -145,13 +128,7 @@ p {
     margin-right: 20px;
   }
 
-  h1 {
-    font-size: 3em;
-  }
 
-  p {
-    font-size: 1.5em;
-  }
 
   .question-form {
     margin-left: 60px;

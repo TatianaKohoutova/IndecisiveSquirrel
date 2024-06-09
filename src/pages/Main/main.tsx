@@ -19,10 +19,10 @@ export const Main = () => {
                             Tak pojďme na to.
                         </p>
                         <div className="buttons">
-                            <Link className="button_aboutUs" to="./about">
+                            <Link className="button" to="./about">
                                 Kdo jsme?
                             </Link>
-                            <Link className="button_aboutGame" to="./game">
+                            <Link className="button" to="./game">
                                 Hrát hru
                             </Link>
                         </div>

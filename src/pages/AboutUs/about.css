@@ -2,7 +2,7 @@
   background-color: #F3E3C4;
   display: flex;
   flex-direction: column;
-  font-size: 1em;
+  /* font-size: 1em; */
   flex-wrap: wrap;
   margin: 30px 30px 0;
   border-radius: 10px;
@@ -54,21 +54,14 @@
 }
 
 
-.about_person {
+/* .about_person {
   font-size: 1.2em;
-}
+} */
 
 .card_person {
   min-width: 25vw;
 }
 
-h3 {
-  font-family: "Original Surfer", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  font-size: 1.5em;
-}
 
 .img_onTheTree {
   /* max-width: 320px;

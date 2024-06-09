@@ -7,7 +7,7 @@ import { recipes } from '../../data/recipes'
 import { showSelectedRecepy } from './helpers'
 import './style.css'
 
-const defaultState = { type: null, activity: null, isLowCost: null }
+const defaultState = { taste: null, calories: null, type: null, isLowCost: null }
 
 export const QuestionForm = () => {
     const { questionId } = useParams()
@@ -15,6 +15,8 @@ export const QuestionForm = () => {
     const { title, options, id } = questions[questionId]
     const navigate = useNavigate()
     const questionsCount = questions.length
+    const [active, setActive] = useState(false)
+    const questionKey = state.questionId
 
     const handleForwardClick = () => {
         if (Number(questionId) === questionsCount) {
@@ -36,6 +38,8 @@ export const QuestionForm = () => {
 
     const handleClick = ({ valueId, value }) => {
         setState({ ...state, [valueId]: value })
+        setActive(value)
+        console.log(value)
     }
 
     console.log(state)
@@ -52,13 +56,14 @@ export const QuestionForm = () => {
                         value={value}
                         onClick={handleClick}
                         id={id}
+                        active={active === value}
                     />
                 ))}
             </div>
             {Number(questionId) === 0 ? null : (
                 <Button ariaLabel={'Předchozí otázka'} name={'Nazpět'} handleClick={handleBackwardClick} />
             )}
-            {Number(questionId) === questionsCount - 1 ? (
+            {Number(questionId) === questionsCount - 1 && true ? (
                 <Button ariaLabel={'Zobrazit výsledek'} name={'Vyhodnotit'} handleClick={handleResultClick} />
             ) : (
                 <Button ariaLabel={'Další otázka'} name={'Vpřed'} handleClick={handleForwardClick} />

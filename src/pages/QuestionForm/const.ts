@@ -37,15 +37,15 @@ export const questions = [
             { description: 'Masové', img: '', value: Type.Meat },
         ],
     },
-    {
-        // id: 'activity',
-        // title: 'Jak jsi byl dneska aktivní?',
-        // options: [
-        //     { description: 'Aktivní', img: '', value: ActivityType.Active },
-        //     { description: 'Středně', img: '', value: ActivityType.Medium },
-        //     { description: 'Pasivní', img: '', value: ActivityType.Passive },
-        // ],
-    },
+    //{
+    // id: 'activity',
+    // title: 'Jak jsi byl dneska aktivní?',
+    // options: [
+    //     { description: 'Aktivní', img: '', value: ActivityType.Active },
+    //     { description: 'Středně', img: '', value: ActivityType.Medium },
+    //     { description: 'Pasivní', img: '', value: ActivityType.Passive },
+    // ],
+    //},
 
     //     id: 'difficulty',
     //     title: 'Jakou náročnost receptu by jsi dneska preferoval?',

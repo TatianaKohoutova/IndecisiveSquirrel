@@ -9,10 +9,30 @@ import { recipes } from '../../data/recipes'
 export const showSelectedRecepy = (usersReplies) => {
     const recepyArray = Object.values(recipes)
 
-    let filteredRecepies = recepyArray
-        .filter((recepy) => recepy.activity === usersReplies.activity)
-        .filter((recepy) => recepy.isLowCost === usersReplies.isLowCost)
+    let filteredRecepies = []
+
+    filteredRecepies = recepyArray
         .filter((recepy) => recepy.type === usersReplies.type)
+        .filter((recepy) => recepy.taste === usersReplies.taste)
+        .filter((recepy) => recepy.calories === usersReplies.calories)
+        .filter((recepy) => recepy.isLowCost === usersReplies.isLowCost)
+
+    if (!filteredRecepies.length) {
+        filteredRecepies = recepyArray
+            .filter((recepy) => recepy.type === usersReplies.type)
+            .filter((recepy) => recepy.taste === usersReplies.taste)
+            .filter((recepy) => recepy.calories === usersReplies.calories)
+    }
+
+    if (!filteredRecepies.length) {
+        filteredRecepies = recepyArray
+            .filter((recepy) => recepy.type === usersReplies.type)
+            .filter((recepy) => recepy.taste === usersReplies.taste)
+    }
+
+    if (!filteredRecepies.length) {
+        filteredRecepies = recepyArray.filter((recepy) => recepy.type === usersReplies.type)
+    }
 
     const filteredRecepy = filteredRecepies[Math.floor(Math.random() * filteredRecepies.length)]
 
@@ -20,6 +40,8 @@ export const showSelectedRecepy = (usersReplies) => {
 
     return filteredRecepy
 }
+
+// {taste: 'Sweet', calories: 'Medium', type: 'Meat', isLowCost: false}
 
 // {
 //     activity: 'Medium'

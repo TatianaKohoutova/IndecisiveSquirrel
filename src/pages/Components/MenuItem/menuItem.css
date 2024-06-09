@@ -13,11 +13,11 @@
 }
 
 .nut {
-  background-image: url("./img/Nut.png");
+  /* background-image: url("./img/Nut.png");
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   transform: rotate(180deg);
-  width: 50px;
+  width: 38px;
   height: 50px;
   position: relative;
   top: 0;

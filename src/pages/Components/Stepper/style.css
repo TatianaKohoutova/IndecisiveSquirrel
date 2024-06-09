@@ -1,1 +1,21 @@
+.container_img_orisek {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+}
 
+.img_orisek {
+  width: 25px;
+  height: 38px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .container_img_orisek {
+    position: absolute;
+    left: 15px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+}

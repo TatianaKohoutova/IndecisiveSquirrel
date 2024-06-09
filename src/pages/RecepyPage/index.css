@@ -45,6 +45,10 @@
   .suggestion {
     margin-top: 20px;
   }
+
+  .btn_navigation {
+    flex-direction: column;
+  }
 }
 
 /* RECEPY DETAIL */
@@ -64,8 +68,6 @@
 .recept_toto--text {
   margin-top: 0;
 }
-
-
 
 .recepy_todo--img {
   width: 200px;
@@ -101,6 +103,13 @@ li {
 
 /* BUTTONS TO ADD OR REMOVE PORTION */
 
+.recepy_info_icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .btn_navigation {
   display: flex;
+
 }

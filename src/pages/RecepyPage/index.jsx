@@ -37,25 +37,27 @@ export const RecepyPage = () => {
                     </ol>
                 </div>
                 <div className="recepy-additional">
-                    <div className="recepy-additional__time">
-                        <img className="recepy-additional--watchImg" src="/img/Watch.png" alt="" />
-                        <p>
-                            {preparationTime} {timeUnit}
-                        </p>
+                    <div className="recepy_info_icons">
+                        <div className="recepy-additional__time">
+                            <img className="recepy-additional--watchImg" src="/img/watch.png" alt="Čas" />
+                            <p>
+                                {preparationTime} {timeUnit}
+                            </p>
+                        </div>
+                        <div className="recepy-additional__portions">
+                            <img className="recepy-additional--portionImg" src="/img/pocetPorci.png" alt="Porce" />
+                            <p>{portions}</p>
+                            <div className="btns"></div>
+                        </div>{' '}
+                        <div className="btn_navigation">
+                            <Button ariaLabel={'Ubrat porci'} handleClick={handleRemovePortion} name={'Ubrat porci'} />
+                            <Button
+                                ariaLabel={'Přidat porci'}
+                                handleClick={() => setPortions(portions + 1)}
+                                name={'Přidat porci'}
+                            />
+                        </div>
                     </div>
-                    <div className="recepy-additional__portions">
-                        <img className="recepy-additional--portionImg" src="/img/pocetPorci.png" alt="" />
-                        <p>{portions}</p>
-                        <div className="btns"></div>
-                    </div>{' '}
-                    <span className="btn_navigation">
-                        <Button ariaLabel={'Ubrat porci'} handleClick={handleRemovePortion} name={'Ubrat porci'} />
-                        <Button
-                            ariaLabel={'Přidat porci'}
-                            handleClick={() => setPortions(portions + 1)}
-                            name={'Přidat porci'}
-                        />
-                    </span>
                     <div className="recepy-additional__ingridients">
                         <h3>Ingridience</h3>
                         <ul>

@@ -9,6 +9,7 @@ import { Header } from './pages/Components/Menu/menu'
 import { Footer } from './pages/Components/Footer'
 import { Main } from './pages/Main/main'
 import { RecepyPage } from './pages/RecepyPage'
+import { RecepyList } from './pages/Components/RecepyList'
 
 export const App = () => {
     const location = useLocation()
@@ -34,7 +35,8 @@ const router = createBrowserRouter([
             { path: '/about', element: <AboutUs /> },
             { path: '/questionForm/:questionId', element: <QuestionForm /> },
             { path: '/questionForm', element: <QuestionForm /> },
-            { path: '/recepy', element: <RecepyPage /> },
+            { path: '/recepy/:recepyId', element: <RecepyPage /> },
+            { path: '/recepyList', element: <RecepyList/>}
         ],
     },
 ])

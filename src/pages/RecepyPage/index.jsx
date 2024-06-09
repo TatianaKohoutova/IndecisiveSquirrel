@@ -16,8 +16,7 @@ export const RecepyPage = () => {
     //   {},
     // }
 
-    let { recepyId } = useParams()
-    recepyId = 'rajcatovaVejceZPanve'
+    const { recepyId } = useParams()
 
     return (
         <div>

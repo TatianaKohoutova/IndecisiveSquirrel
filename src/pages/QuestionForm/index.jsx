@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { AnswerCard } from '../Components/AnswerCard'
+import { Button } from '../Components/Button'
 import { questions } from './const'
 import { useState } from 'react'
 import './style.css'
@@ -8,6 +9,16 @@ const defaultState = { type: null, activity: null, isLowCost: null }
 
 export const QuestionForm = () => {
     const { questionId } = useParams()
+    const handleForwardClick = () => {
+        if (Number(questionId) === questionsCount) {
+            navigate('/recepy')
+        } else {
+            navigate('/questionForm/' + (Number(questionId) + 1))
+        }
+    }
+    const handleBackwardClick = () => {
+        navigate('/questionForm/' + (Number(questionId) - 1))
+    }
 
     const { title, options, id } = questions[questionId]
     const [state, setState] = useState(defaultState)
@@ -33,29 +44,9 @@ export const QuestionForm = () => {
                 ))}
             </div>
             {Number(questionId) === 0 ? null : (
-                <button
-                    className="button_back"
-                    aria-label="Předchozí"
-                    onClick={() => {
-                        navigate('/questionForm/' + (Number(questionId) - 1))
-                    }}
-                >
-                    Nazpět{' '}
-                </button>
+                <Button ariaLabel={'Předchozí otázka'} name={'Nazpět'} handleClick={handleBackwardClick} />
             )}
-            <button
-                className="button_forward"
-                aria-label="Nadcházející"
-                onClick={() => {
-                    if (Number(questionId) === questionsCount) {
-                        navigate('/recepy')
-                    } else {
-                        navigate('/questionForm/' + (Number(questionId) + 1))
-                    }
-                }}
-            >
-                Vpřed
-            </button>
+            <Button ariaLabel={'Další otázka'} name={'Vpřed'} handleClick={handleForwardClick} />
         </div>
     )
 }

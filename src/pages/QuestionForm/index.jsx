@@ -21,7 +21,9 @@ export const QuestionForm = () => {
     const handleBackwardClick = () => {
         navigate('/questionForm/' + (Number(questionId) - 1))
     }
-
+    const handleResultClick = () => {
+        navigate('/recepy')
+    }
     const { title, options, id } = questions[questionId]
     const [state, setState] = useState(defaultState)
 
@@ -52,7 +54,11 @@ export const QuestionForm = () => {
             {Number(questionId) === 0 ? null : (
                 <Button ariaLabel={'Předchozí otázka'} name={'Nazpět'} handleClick={handleBackwardClick} />
             )}
-            <Button ariaLabel={'Další otázka'} name={'Vpřed'} handleClick={handleForwardClick} />
+            {Number(questionId) === questionsCount - 1 ? (
+                <Button ariaLabel={'Zobrazit výsledek'} name={'Vyhodnotit'} handleClick={handleResultClick} />
+            ) : (
+                <Button ariaLabel={'Další otázka'} name={'Vpřed'} handleClick={handleForwardClick} />
+            )}
         </div>
     )
 }

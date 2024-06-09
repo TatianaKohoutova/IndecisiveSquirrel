@@ -9,12 +9,14 @@ import { recipes } from '../../data/recipes'
 export const showSelectedRecepy = (usersReplies) => {
     const recepyArray = Object.values(recipes)
 
-    const filteredRecepies = recepyArray
+    let filteredRecepies = recepyArray
         .filter((recepy) => recepy.activity === usersReplies.activity)
         .filter((recepy) => recepy.isLowCost === usersReplies.isLowCost)
         .filter((recepy) => recepy.type === usersReplies.type)
 
     const filteredRecepy = filteredRecepies[Math.floor(Math.random() * filteredRecepies.length)]
+
+    console.log(filteredRecepy)
 
     return filteredRecepy
 }

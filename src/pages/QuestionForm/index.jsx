@@ -3,12 +3,18 @@ import { AnswerCard } from '../Components/AnswerCard'
 import { Button } from '../Components/Button'
 import { questions } from './const'
 import { useState } from 'react'
+import { recipes } from '../../data/recipes'
+import { showSelectedRecepy } from './helpers'
 import './style.css'
 
 const defaultState = { type: null, activity: null, isLowCost: null }
 
 export const QuestionForm = () => {
     const { questionId } = useParams()
+    const [state, setState] = useState(defaultState)
+    const { title, options, id } = questions[questionId]
+    const navigate = useNavigate()
+    const questionsCount = questions.length
 
     const handleForwardClick = () => {
         if (Number(questionId) === questionsCount) {
@@ -21,20 +27,18 @@ export const QuestionForm = () => {
     const handleBackwardClick = () => {
         navigate('/questionForm/' + (Number(questionId) - 1))
     }
+
     const handleResultClick = () => {
-        navigate('/recepy')
+        const urlAddressPart = showSelectedRecepy(state).id
+        console.log(showSelectedRecepy(state))
+        navigate(`/recepy/${urlAddressPart}`)
     }
-    const { title, options, id } = questions[questionId]
-    const [state, setState] = useState(defaultState)
 
     const handleClick = ({ valueId, value }) => {
         setState({ ...state, [valueId]: value })
     }
 
     console.log(state)
-
-    const navigate = useNavigate()
-    const questionsCount = questions.length
 
     return (
         <div className="question-form">

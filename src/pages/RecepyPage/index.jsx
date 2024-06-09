@@ -7,7 +7,8 @@ import { Button } from '../Components/Button'
 export const RecepyPage = () => {
     const { recepyId } = useParams()
     const amountOfPortions = recipes[recepyId].portions
-    const amountOfIngredients = recipes[recepyId].ingredients.amount
+    const preparationTime = recipes[recepyId].preparationTime
+    const timeUnit = recipes[recepyId].timeUnit
     const [reply, setReply] = useState()
     const [portions, setPortions] = useState(amountOfPortions)
     const handleRemovePortion = () => {
@@ -17,7 +18,7 @@ export const RecepyPage = () => {
             setPortions(portions)
         }
     }
-
+    console.log(recipes[recepyId])
     return (
         <div>
             <div className="recepy-header bubble">
@@ -38,7 +39,9 @@ export const RecepyPage = () => {
                 <div className="recepy-additional">
                     <div className="recepy-additional__time">
                         <img className="recepy-additional--watchImg" src="/img/Watch.png" alt="" />
-                        <p>do 30 minut</p>
+                        <p>
+                            {preparationTime} {timeUnit}
+                        </p>
                     </div>
                     <div className="recepy-additional__portions">
                         <img className="recepy-additional--portionImg" src="/img/pocetPorci.png" alt="" />

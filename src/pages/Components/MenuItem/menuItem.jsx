@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import './menuItem.css'
-import nut from '../../../img/Nut.png'
+import nut from '/img/Nut.png'
 
 export const MenuItem = ({ link, text, handleClick }) => {
     return (

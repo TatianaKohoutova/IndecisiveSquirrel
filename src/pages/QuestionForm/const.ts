@@ -14,22 +14,24 @@ import {
 } from '../../const'
 
 export const questions = [
-    //     id: 'taste',
-    //     title: 'Jaká je tvoje preferovaná chuť?',
-    //     options: [
-    //         { description: 'Sladká', img: '', value: '' },
-    //         { description: 'Slaná', img: '', value: '' },
-    //         // {description:'Kyselá', img:'',}
-    //     ],
-
-    //     id: 'calories',
-    //     title: 'Jak moc chceš dnes hřešit?',
-    //     options: [
-    //         { description: 'Vůbec. Chci něco zdravého.', img: '', value: '' },
-    //         { description: 'Něco mezi.', img: '', value: '' },
-    //         { description: 'Dneska potřebuju prasárničku.', img: '', value: '' },
-    //     ],
-
+    {
+        id: 'taste',
+        title: 'Jaká je tvoje preferovaná chuť?',
+        options: [
+            { description: 'Sladká', img: '', value: Taste.Sweet },
+            { description: 'Slaná', img: '', value: Taste.Salty },
+    //         // {description:'Kyselá', img:'', value: Taste.Sour}
+        ],
+    },
+    {
+        id: 'calories',
+        title: 'Jak moc chceš dnes hřešit?',
+        options: [
+            { description: 'Vůbec. Chci něco zdravého.', img: '', value: Calories.Low },
+            { description: 'Něco mezi.', img: '', value: Calories.Medium },
+            { description: 'Dneska potřebuju prasárničku.', img: '', value: Calories.High },
+        ],
+    },
     //     id: 'spacy',
     //     title: 'Jak pálivé jídlo chceš?',
     //     options: [
@@ -43,19 +45,19 @@ export const questions = [
         id: 'type',
         title: 'Jak typ jídla by ti pro dnešek vyhovoval?',
         options: [
-            { description: 'Veganské', img: '', value: Type.Vegan },
+            // { description: 'Veganské', img: '', value: Type.Vegan },
             { description: 'Vegetariánské', img: '', value: Type.Vegetarian },
             { description: 'Masové', img: '', value: Type.Meat },
         ],
     },
     {
-        id: 'activity',
-        title: 'Jak jsi byl dneska aktivní?',
-        options: [
-            { description: 'Aktivní', img: '', value: ActivityType.Active },
-            { description: 'Středně', img: '', value: ActivityType.Medium },
-            { description: 'Pasivní', img: '', value: ActivityType.Passive },
-        ],
+        // id: 'activity',
+        // title: 'Jak jsi byl dneska aktivní?',
+        // options: [
+        //     { description: 'Aktivní', img: '', value: ActivityType.Active },
+        //     { description: 'Středně', img: '', value: ActivityType.Medium },
+        //     { description: 'Pasivní', img: '', value: ActivityType.Passive },
+        // ],
     },
 
     //     id: 'difficulty',

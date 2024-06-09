@@ -1,4 +1,4 @@
-import { ActivityType, Type, Units, UnitsMap } from '../const'
+import { ActivityType, Calories, Taste, Type, Units, UnitsMap } from '../const'
 
 export const recipes = {
     rajcatovaVejceZPanve: {
@@ -6,6 +6,8 @@ export const recipes = {
         type: Type.Vegetarian,
         activity: ActivityType.Medium,
         isLowCost: false,
+        taste: Taste.Salty,
+        calories: Calories.Medium,
         title: 'Rajčatová vejce z pánve',
         portions: 2,
         process: [
@@ -35,6 +37,8 @@ export const recipes = {
         type: Type.Vegetarian,
         activity: ActivityType.Medium,
         isLowCost: false,
+        taste: Taste.Salty,
+        calories: Calories.Medium,
         title: 'Zeleninový kuskus s grilovaným hermelínem',
         portions: 1,
         process: [
@@ -63,6 +67,8 @@ export const recipes = {
         type: Type.Vegetarian,
         activity: ActivityType.Medium,
         isLowCost: false,
+        taste: Taste.Salty,
+        calories: Calories.Medium,
         title: 'Těstoviny s pečeným sýrem feta',
         portions: 4,
         process: [
@@ -90,6 +96,8 @@ export const recipes = {
         type: Type.Meat,
         activity: ActivityType.Active,
         isLowCost: false,
+        taste: Taste.Salty,
+        calories: Calories.High,
         title: 'Parmazánové kuře',
         portions: 3,
         process: [
@@ -117,6 +125,8 @@ export const recipes = {
         type: Type.Meat,
         activity: ActivityType.Active,
         isLowCost: true,
+        taste: Taste.Salty,
+        calories: Calories.High,
         title: 'Rychlé zapečené chleby',
         portions: 2,
         process: [
@@ -146,6 +156,8 @@ export const recipes = {
         type: Type.Vegetarian,
         activity: ActivityType.Active,
         isLowCost: true,
+        taste: Taste.Salty,
+        calories: Calories.High,
         title: 'Staročeské zelníky',
         portions: 2,
         process: [
@@ -169,6 +181,8 @@ export const recipes = {
         type: Type.Meat,
         activity: ActivityType.Active,
         isLowCost: true,
+        taste: Taste.Salty,
+        calories: Calories.High,
         title: 'Plněné toasty',
         portions: 2,
         process: [
@@ -194,6 +208,8 @@ export const recipes = {
         type: Type.Vegetarian,
         activity: ActivityType.Passive,
         isLowCost: false,
+        taste: Taste.Salty,
+        calories: Calories.Low,
         title: 'Salát z polníčku a rukoly',
         portions: 2,
         process: [
@@ -219,6 +235,8 @@ export const recipes = {
         type: Type.Vegetarian,
         activity: ActivityType.Active,
         isLowCost: false,
+        taste: Taste.Salty,
+        calories: Calories.High,
         title: 'Smetanové brambory z pánve',
         portions: 2,
         process: [
@@ -245,6 +263,8 @@ export const recipes = {
         type: Type.Vegetarian,
         activity: ActivityType.Active,
         isLowCost: true,
+        taste: Taste.Sweet,
+        calories: Calories.High,
         title: 'Palačinky',
         portions: 2,
         process: [
@@ -265,6 +285,8 @@ export const recipes = {
         type: Type.Vegetarian,
         activity: ActivityType.Active,
         isLowCost: true,
+        taste: Taste.Sweet,
+        calories: Calories.High,
         title: 'Krupicová kaše',
         portions: 1,
         process: [
@@ -285,6 +307,8 @@ export const recipes = {
         type: Type.Vegetarian,
         activity: ActivityType.Active,
         isLowCost: true,
+        taste: Taste.Sweet,
+        calories: Calories.High,
         title: 'Americké lívance',
         portions: 2,
         process: [

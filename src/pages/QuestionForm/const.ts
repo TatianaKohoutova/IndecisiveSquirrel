@@ -1,17 +1,4 @@
-import {
-    Calories,
-    CaloriesScale,
-    Taste,
-    TasteMap,
-    Spicy,
-    SpicyScale,
-    Type,
-    TypeMap,
-    ActivityType,
-    ActivityTypeTreshold,
-    Difficulty,
-    DifficultyMap,
-} from '../../const'
+import { Calories, Taste, Spicy, Type, ActivityType, Difficulty } from '../../const'
 
 export const questions = [
     {
@@ -20,7 +7,7 @@ export const questions = [
         options: [
             { description: 'Sladká', img: '', value: Taste.Sweet },
             { description: 'Slaná', img: '', value: Taste.Salty },
-    //         // {description:'Kyselá', img:'', value: Taste.Sour}
+            //         // {description:'Kyselá', img:'', value: Taste.Sour}
         ],
     },
     {

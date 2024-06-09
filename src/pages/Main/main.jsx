@@ -24,11 +24,10 @@ export const Main = () => {
                             <Link className="button_aboutGame" to="./game">
                                 Hrát hru
                             </Link>
-
                         </div>
                     </div>
                 </div>
-                <img src="../img/Volba.png" alt="Volba" className="img_cornerSquirrel--bigscreen"></img>
+                <img src="../img/Volba.png" alt="Volba" className="img_cornerSquirrel--bigscreen" />
             </div>
         </>
     )

@@ -5,8 +5,8 @@ export const questions = [
         id: 'taste',
         title: 'Jaká je tvoje preferovaná chuť?',
         options: [
-            { description: 'Sladká', img: '', value: Taste.Sweet },
-            { description: 'Slaná', img: '', value: Taste.Salty },
+            { description: 'Sladká', img: '/img/ikons-questions/sweet_salty/Sweet.png', value: Taste.Sweet },
+            { description: 'Slaná', img: '/img/ikons-questions/sweet_salty/Salty.png', value: Taste.Salty },
             //         // {description:'Kyselá', img:'', value: Taste.Sour}
         ],
     },

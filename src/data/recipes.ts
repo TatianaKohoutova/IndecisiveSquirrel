@@ -50,7 +50,7 @@ export const recipes = {
             'V misce smícháte trochu oleje, sůl, oblíbené koření a bylinky.',
             'Připravíte si alobal o velikosti cca 15x15 cm. Na alobal položíte hermelím a celý ho potřete kořenící směsí.',
             'Hermelím zabalte do alobalu a takto zabalený ho položte na pekáček, který vložíte do rozehřáté trouby na cca 15 min.',
-            'Kuskus nasypte do misky, zalijete horkou vodou nebo vývarem a osolte. Nechte kUnitsMap[Units.Piece]us odpočívat pod pokličkou.',
+            'Kuskus nasypte do misky, zalijete horkou vodou nebo vývarem a osolte. Nechte kuskus odpočívat pod pokličkou.',
             'Nakrájejte si rajčata na menší kousky. Zeleninu z plechovky slijte (pokud použijete všechnu) nebo odeberte trochu bez nálevu.',
             'Všechnu zeleninu smíchejte s hotovým kuskusem a přendejte na talíř. K němu přidejte propečený hermelím (bez alobalu) a podávejte.',
         ],

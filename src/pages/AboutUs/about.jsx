@@ -2,7 +2,7 @@ import './about.css'
 
 export const AboutUs = () => {
     return (
-        <div>
+        <>
             <div className="nadpis">
                 <h1>Nerozhodná veverka</h1>
             </div>
@@ -56,6 +56,6 @@ export const AboutUs = () => {
                 </div>
             </div>
             <div className="footer bottom-line"></div>
-        </div>
+        </>
     )
 }

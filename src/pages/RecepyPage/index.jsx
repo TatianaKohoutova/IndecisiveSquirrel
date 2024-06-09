@@ -59,7 +59,7 @@ export const RecepyPage = () => {
                         </div>
                     </div>
                     <div className="recepy-additional__ingridients">
-                        <h3>Ingridience</h3>
+                        <h3>Ingredience</h3>
                         <ul>
                             {recipes[recepyId].ingredients.map((list) => (
                                 <li key={list.name}>

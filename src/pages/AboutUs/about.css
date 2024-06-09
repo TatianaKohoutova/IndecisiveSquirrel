@@ -27,15 +27,13 @@
 }
 
 .details_aboutUs {
-  padding: 0px;
-  margin: 30px;
+  margin: 30px 30px 0;
   border-radius: 10px;
 }
 
 .details_aboutUs {
   background-color: #F3E3C4;
   display: flex;
-  padding-bottom: 0px;
   padding-left: 30px;
   padding-right: 30px;
   flex-direction: row;

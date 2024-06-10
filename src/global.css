@@ -147,15 +147,17 @@ a {
 @media (max-width: 768px) {
   body {
     background-color: #934324;
+    min-width: auto; /* Přidáno */
   }
 
   .main {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    /* padding-bottom: 50px; */
     border-left: none;
     border-right: none;
+    width: 100%; /* Přidáno */
+    padding: 0 20px; /* Přidáno */
   }
 
   .text {
@@ -163,8 +165,16 @@ a {
     padding: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    margin: auto; /* Přidáno */
   }
 
+  h1,
+  h2,
+  h3 {
+    font-size: 2em; /* Přidáno */
+    margin-top: 20px; /* Přidáno */
+    margin-bottom: 20px; /* Přidáno */
+  }
 
   .buttons {
     flex-direction: column;
@@ -176,7 +186,6 @@ a {
   .button {
     min-width: 40%;
     margin-top: 20px;
-    /* margin-top: 30px; */
   }
 
   .img_cornerSquirrel {
@@ -185,10 +194,8 @@ a {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    /* border: 0.5px solid #3C2B14; */
     -webkit-box-shadow: 0px 10px 50px 8px #3C2B14;
     -moz-box-shadow: 0px 10px 50px 8px #3C2B14;
-    /* box-shadow: -1px 30px 50px 8px #3C2B14; */
     box-shadow: 0px 10px 50px 8px #3C2B14;
   }
 }

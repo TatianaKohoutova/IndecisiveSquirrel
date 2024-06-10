@@ -63,7 +63,7 @@ export const RecepyPage = () => {
                         <ul>
                             {recipes[recepyId].ingredients.map((list) => (
                                 <li key={list.name}>
-                                    {list.name} - {(list.amount / amountOfPortions) * portions} {list.unit}
+                                      {(list.amount / amountOfPortions) * portions} {list.unit}  {list.name} 
                                 </li>
                             ))}
                         </ul>

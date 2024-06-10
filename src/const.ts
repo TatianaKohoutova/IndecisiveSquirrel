@@ -11,15 +11,15 @@ export enum Units {
 }
 
 export const UnitsMap = {
-    [Units.Kg]: 'Kg',
-    [Units.L]: 'Litr',
-    [Units.Ml]: 'Mililitr',
-    [Units.G]: 'Gramů',
-    [Units.TableSpoon]: 'Lžíce',
-    [Units.TeaSpoon]: 'Čajova lžička',
-    [Units.Piece]: 'Ks',
-    [Units.Handful]: 'Hrst',
-    [Units.Pinch]: 'Pinch',
+    [Units.Kg]: 'kg',
+    [Units.L]: 'l',
+    [Units.Ml]: 'ml',
+    [Units.G]: 'g',
+    [Units.TableSpoon]: 'lžíce',
+    [Units.TeaSpoon]: 'lžičky',
+    [Units.Piece]: 'ks',
+    [Units.Handful]: 'hrst',
+    [Units.Pinch]: 'špetka',
 }
 
 export enum Calories {

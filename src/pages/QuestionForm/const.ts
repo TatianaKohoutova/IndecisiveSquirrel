@@ -3,7 +3,7 @@ import { Calories, Taste, Spicy, Type, ActivityType, Difficulty, Cost } from '..
 export const questions = [
     {
         id: 'type',
-        title: 'Jak typ jídla by ti pro dnešek vyhovoval?',
+        title: 'Jaký typ jídla by ti pro dnešek vyhovoval?',
         options: [
             // { description: 'Veganské', img: '', value: Type.Vegan },
             { description: 'Vegetariánské', img: '/img/ikons-questions/type/Vege.png', value: Type.Vegetarian },

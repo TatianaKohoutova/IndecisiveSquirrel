@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import { Step } from '../Step'
 import { questions } from '../../QuestionForm/const'
 import './style.css'
+import React from 'react'
 
 export const Stepper = () => {
     const questionsCount = questions.length
@@ -9,7 +10,7 @@ export const Stepper = () => {
     return (
         <div className="container_img_orisek">
             {Array.from({ length: questionsCount }).map((_, index) => {
-                return <Step isAnswered={Number(questionId) < index} />
+                return <Step key={index} isAnswered={Number(questionId) < index} />
             })}
         </div>
     )

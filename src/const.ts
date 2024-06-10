@@ -78,6 +78,16 @@ export const TypeMap = {
     [Type.Meat]: 'Masové',
 }
 
+export enum Cost {
+    Low = 'Low',
+    Hight = 'Hight',
+}
+
+export const CostMap = {
+    [Cost.Low]: 'Veganské',
+    [Cost.Hight]: 'Hight',
+}
+
 export const ActivityType = {
     Passive: 'Passive',
     Medium: 'Medium',

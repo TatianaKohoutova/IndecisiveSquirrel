@@ -10,7 +10,7 @@ import './style.css'
 import { Step } from '../Components/Step'
 import React from 'react'
 
-const defaultState = { taste: null, calories: null, type: null, isLowCost: null }
+const defaultState = { type: null, taste: null, calories: null, isLowCost: null }
 
 export const QuestionForm = () => {
     const { questionId } = useParams()
@@ -20,6 +20,7 @@ export const QuestionForm = () => {
     if (!questionId) {
         return navigate('/')
     }
+
     const { title, options, id } = questions[questionId]
 
     const questionsCount = questions.length
@@ -27,11 +28,14 @@ export const QuestionForm = () => {
     const isQuestionAnswered = !state[id]
 
     const handleForwardClick = () => {
-        if (Number(questionId) === questionsCount) {
-            navigate('/recepy')
-        } else {
-            navigate('/questionForm/' + (Number(questionId) + 1))
-        }
+        navigate('/questionForm/' + (Number(questionId) + 1))
+        // if (Number(questionId) === questionsCount) {
+        //     navigate('/recepy')
+        // } else {
+        //     navigate('/questionForm/' + (Number(questionId) + 1))
+        // }
+        console.log(state)
+        console.log(showSelectedRecepy(state))
     }
 
     const handleBackwardClick = () => {
@@ -41,6 +45,8 @@ export const QuestionForm = () => {
     const handleResultClick = () => {
         const urlAddressPart = showSelectedRecepy(state).id
         navigate(`/recepy/${urlAddressPart}`)
+        console.log(state)
+        console.log(showSelectedRecepy(state).id)
     }
 
     const handleClick = ({ valueId, value }) => {

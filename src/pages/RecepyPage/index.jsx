@@ -27,16 +27,7 @@ export const RecepyPage = () => {
                 <h2 className="recepy-title">{recipes[recepyId].title}</h2>
             </div>
             <div className="recepy-detail text">
-                <div className="recepy-todo">
-                    {/* <img className="recepy_todo--img" src="../../img/Volba.png" alt="" /> */}
-                    <h3>Jak na to?</h3>
-                    <ol className="recept_toto--text">
-                        {recipes[recepyId].process.map((step) => (
-                            <li key={step}>{step}</li>
-                        ))}
-                    </ol>
-                </div>
-                <div className="recepy-additional">
+            <div className="recepy-additional">
                     <div className="recepy_info_icons">
                         <div className="recepy-additional__time">
                             <img className="recepy-additional--watchImg" src="/img/watch.png" alt="Čas" />
@@ -69,6 +60,16 @@ export const RecepyPage = () => {
                         </ul>
                     </div>
                 </div>
+                <div className="recepy-todo">
+                    {/* <img className="recepy_todo--img" src="../../img/Volba.png" alt="" /> */}
+                    <h3>Jak na to?</h3>
+                    <ol className="recept_toto--text">
+                        {recipes[recepyId].process.map((step) => (
+                            <li key={step}>{step}</li>
+                        ))}
+                    </ol>
+                </div>
+
             </div>
         </div>
     )

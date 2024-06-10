@@ -49,6 +49,18 @@
   .btn_navigation {
     flex-direction: column;
   }
+
+  .recepy-detail {
+    flex-direction: column;
+  }
+
+  .recepy-additional {
+    order: 1;
+  }
+
+  .recepy-todo {
+    order: 2;
+  }
 }
 
 /* RECEPY DETAIL */
@@ -56,7 +68,9 @@
   padding: 30px;
   display: flex;
   flex-direction: row;
-  gap: 30px
+  gap: 30px;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .recepy-todo {
@@ -76,7 +90,7 @@
 }
 
 .recepy-additional {
-  flex: 1
+  flex: 1;
 }
 
 .recepy-additional--watchImg,
@@ -113,10 +127,7 @@ li {
   margin: 0;
 }
 
-
-
 /* BUTTONS TO ADD OR REMOVE PORTION */
-
 .recepy_info_icons {
   display: flex;
   flex-direction: column;
@@ -125,5 +136,4 @@ li {
 
 .btn_navigation {
   display: flex;
-
 }

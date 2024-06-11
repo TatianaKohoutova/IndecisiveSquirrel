@@ -13,7 +13,8 @@ body {
 p,
 h1,
 h2,
-h3 {
+h3,
+a {
   color: #3C2B14;
 }
 
@@ -70,9 +71,12 @@ h3 {
   line-height: 100%;
 }
 
-h2,
-h3 {
+h2 {
   font-size: 2em;
+}
+
+h3 {
+font-size: 1.5em;
 }
 
 
@@ -147,7 +151,8 @@ a {
 @media (max-width: 768px) {
   body {
     background-color: #934324;
-    min-width: auto; /* Přidáno */
+    min-width: auto;
+    /* Přidáno */
   }
 
   .main {
@@ -156,8 +161,10 @@ a {
     box-shadow: none;
     border-left: none;
     border-right: none;
-    width: 100%; /* Přidáno */
-    padding: 0 20px; /* Přidáno */
+    width: 100%;
+    /* Přidáno */
+    padding: 0 20px;
+    /* Přidáno */
   }
 
   .text {
@@ -165,15 +172,19 @@ a {
     padding: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    margin: auto; /* Přidáno */
+    margin: auto;
+    /* Přidáno */
   }
 
   h1,
   h2,
   h3 {
-    font-size: 2em; /* Přidáno */
-    margin-top: 20px; /* Přidáno */
-    margin-bottom: 20px; /* Přidáno */
+    font-size: 2em;
+    /* Přidáno */
+    margin-top: 20px;
+    /* Přidáno */
+    margin-bottom: 20px;
+    /* Přidáno */
   }
 
   .buttons {

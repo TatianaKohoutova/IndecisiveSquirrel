@@ -1,0 +1,26 @@
+.salty {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vege-section,
+maet-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px; 
+}
+
+.salty ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.salty ul li a,
+.sweet ul li a {
+  font-size: 0.8em; 
+}
+
+.vege-section ul, .meat-section ul {
+  list-style: disc;
+}

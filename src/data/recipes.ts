@@ -1,5 +1,16 @@
 import { ActivityType, Calories, Taste, Type, Units, UnitsMap } from '../const'
 
+// interface Recipe {
+// id: string;
+// title: string;
+// portions: number;
+// preparationTime: number;
+// timeUnit: string;
+// process: string;
+// name: string;
+// amout: number;
+// }
+
 export const recipes = {
     rajcatovaVejceZPanve: {
         id: 'rajcatovaVejceZPanve',

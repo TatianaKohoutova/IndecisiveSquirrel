@@ -10,7 +10,7 @@ export const Stepper = () => {
     return (
         <div className="container_img_orisek">
             {Array.from({ length: questionsCount }).map((_, index) => {
-                return <Step key={index} isAnswered={Number(questionId) < index} />
+                return <Step key={`step-${index}`} isAnswered={Number(questionId) < index} />
             })}
         </div>
     )

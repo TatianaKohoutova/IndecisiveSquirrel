@@ -9,7 +9,6 @@ export const RecepyPage = () => {
     const amountOfPortions = recipes[recepyId].portions
     const preparationTime = recipes[recepyId].preparationTime
     const timeUnit = recipes[recepyId].timeUnit
-    const [reply, setReply] = useState()
     const [portions, setPortions] = useState(amountOfPortions)
     const handleRemovePortion = () => {
         if (portions > 1) {
@@ -18,11 +17,10 @@ export const RecepyPage = () => {
             setPortions(portions)
         }
     }
-    console.log(recipes[recepyId])
     return (
         <div>
             <div className="recepy-header bubble">
-                <img className="bubbleArrow_recepy" src="../img/Arrow.png" alt="Bubble arrow" />
+                <img className="bubbleArrow_recepy" src="../img/Arrow.png" alt="Šipka k bublině" />
                 <h1 className="suggestion">Dneska vám doporučím....</h1>
                 <h2 className="recepy-title">{recipes[recepyId].title}</h2>
             </div>
@@ -61,7 +59,6 @@ export const RecepyPage = () => {
                     </div>
                 </div>
                 <div className="recepy-todo">
-                    {/* <img className="recepy_todo--img" src="../../img/Volba.png" alt="" /> */}
                     <h3>Jak na to?</h3>
                     <ol className="recept_toto--text">
                         {recipes[recepyId].process.map((step) => (

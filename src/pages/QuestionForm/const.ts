@@ -1,5 +1,7 @@
 import { Calories, Taste, Spicy, Type, ActivityType, Difficulty, Cost } from '../../const'
 
+// Nepoužité importy a zakomentované otázky či kategorie jsou připravené pro budoucí použití
+
 export const questions = [
     {
         id: 'type',

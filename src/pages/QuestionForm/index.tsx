@@ -4,10 +4,8 @@ import { Button } from '../Components/Button'
 import { Stepper } from '../Components/Stepper'
 import { questions } from './const'
 import { useState } from 'react'
-import { recipes } from '../../data/recipes'
 import { showSelectedRecepy } from './helpers'
 import './style.css'
-import { Step } from '../Components/Step'
 import React from 'react'
 
 const defaultState = { type: null, taste: null, calories: null, isLowCost: null }
@@ -29,13 +27,6 @@ export const QuestionForm = () => {
 
     const handleForwardClick = () => {
         navigate('/questionForm/' + (Number(questionId) + 1))
-        // if (Number(questionId) === questionsCount) {
-        //     navigate('/recepy')
-        // } else {
-        //     navigate('/questionForm/' + (Number(questionId) + 1))
-        // }
-        console.log(state)
-        console.log(showSelectedRecepy(state))
     }
 
     const handleBackwardClick = () => {
@@ -45,8 +36,6 @@ export const QuestionForm = () => {
     const handleResultClick = () => {
         const urlAddressPart = showSelectedRecepy(state).id
         navigate(`/recepy/${urlAddressPart}`)
-        console.log(state)
-        console.log(showSelectedRecepy(state).id)
     }
 
     const handleClick = ({ valueId, value }) => {

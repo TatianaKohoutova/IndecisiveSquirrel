@@ -363,4 +363,35 @@ export const recipes = {
             { name: 'oleje', amount: 2, unit: UnitsMap[Units.TableSpoon] },
         ],
     },
+    malinoveTiramisuDoSklenicky: {
+        id: 'malinoveTiramisuDoSklenicky',
+        type: Type.Vegetarian,
+        activity: ActivityType.Active,
+        isLowCost: true,
+        taste: Taste.Sweet,
+        calories: Calories.Low,
+        title: 'Malinové tiramisu do skleničky ',
+        portions: 3,
+        preparationTime: 20,
+        timeUnit: 'min',
+        process: [
+            'Jako první si rozmixujeme sušenky a uvaříme kávu.',
+            'Vymícháme si tvaroh s čekankovým sirupem a vanilkou a začneme vrstvit do připravených sklenic.',
+            'Na dno sklenice dáme 2-3 lžíce mletých sušenek, polijeme trochou kávy a jemně promícháme lžičkou.',
+            'Na to půjde tvarohová vrstva a následně 3-4 lžičky malinového džemu.',
+            'Znovu navrstvíme pomleté sušenky a kávu a trošku promícháme, na to tvaroh a nakonec vršek krému posypeme kakaem.',
+            'Pak už jen necháme vychladit, aby se chutě spojily.',
+        ],
+        ingredients: [
+            { name: 'špaldových sušenek', amount: 115, unit: UnitsMap[Units.G] },
+            { name: 'malinového džemu bez cukru nebo malinové puré', amount: 140, unit: UnitsMap[Units.G] },
+            { name: 'nízkotučného tvarohu', amount: 370, unit: UnitsMap[Units.G] },
+            { name: 'čekankového sirupu', amount: 80, unit: UnitsMap[Units.G] },
+            { name: 'instantní kávy', amount: 1, unit: UnitsMap[Units.TeaSpoon] },
+            { name: 'voda', unit: UnitsMap[Units.Need] },
+            { name: 'kakao', unit: UnitsMap[Units.Need] },
+        ],
+    },
 }
+
+

@@ -10,6 +10,7 @@ export const RecepyPage = () => {
     const preparationTime = recipes[recepyId].preparationTime
     const timeUnit = recipes[recepyId].timeUnit
     const [portions, setPortions] = useState(amountOfPortions)
+
     const handleRemovePortion = () => {
         if (portions > 1) {
             setPortions(portions - 1)
@@ -17,6 +18,14 @@ export const RecepyPage = () => {
             setPortions(portions)
         }
     }
+
+    const getUnitLabel = (amount, unit) => {
+        if (unit === 'lžičky') {
+            return amount === 1 ? 'lžička' : 'lžičky'
+        }
+        return unit
+    }
+
     return (
         <div>
             <div className="recepy-header bubble">
@@ -25,7 +34,7 @@ export const RecepyPage = () => {
                 <h2 className="recepy-title">{recipes[recepyId].title}</h2>
             </div>
             <div className="recepy-detail text">
-            <div className="recepy-additional">
+                <div className="recepy-additional">
                     <div className="recepy_info_icons">
                         <div className="recepy-additional__time">
                             <img className="recepy-additional--watchImg" src="/img/watch.png" alt="Čas" />
@@ -52,8 +61,11 @@ export const RecepyPage = () => {
                         <ul>
                             {recipes[recepyId].ingredients.map((list) => (
                                 <li key={list.name}>
-                                      {(list.amount / amountOfPortions) * portions} {list.unit}  {list.name} 
-                                </li>
+                                {list.amount
+                                    ? `${(list.amount / amountOfPortions) * portions} ${getUnitLabel((list.amount / amountOfPortions) * portions, list.unit)} `
+                                    : 'Podle potřeby '}
+                                {list.name}
+                            </li>
                             ))}
                         </ul>
                     </div>
@@ -66,7 +78,6 @@ export const RecepyPage = () => {
                         ))}
                     </ol>
                 </div>
-
             </div>
         </div>
     )

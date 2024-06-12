@@ -21,7 +21,13 @@ export const RecepyPage = () => {
 
     const getUnitLabel = (amount, unit) => {
         if (unit === 'lžičky') {
-            return amount === 1 ? 'lžička' : 'lžičky'
+            if (amount === 1) {
+                return 'lžička'
+            } else if (amount >= 5) {
+                return 'lžiček'
+            } else {
+                return 'lžičky'
+            }
         }
         return unit
     }

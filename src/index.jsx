@@ -1,6 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
-import { useLocation } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Outlet, useLocation } from 'react-router-dom'
 import './global.css'
 import { AboutGame } from './pages/AboutGame/game'
 import { AboutUs } from './pages/AboutUs/about'
@@ -17,7 +16,7 @@ export const App = () => {
     const isAboutPage = location.pathname === '/about'
 
     return (
-        <div className={`main ${isAboutPage ? 'auto-height' : 'full-height'}`}>
+        <div className="main">
             <Header />
             <Outlet />
             <Footer />
@@ -35,20 +34,10 @@ const router = createBrowserRouter([
             { path: '/game', element: <AboutGame /> },
             { path: '/about', element: <AboutUs /> },
             { path: '/questionForm/:questionId', element: <QuestionForm /> },
-            { path: '/questionForm', element: <QuestionForm /> },
             { path: '/recepy/:recepyId', element: <RecepyPage /> },
             { path: '/recepyList', element: <RecepyList /> },
         ],
     },
 ])
 
-// const router = createBrowserRouter([
-//   {path: '/', element: <HomePage />,},
-//   {path: '/game', element: <AboutGame />,},
-//   {path: '/about', element: <AboutUs />,},
-//   {path: '/questionForm', element: <QuestionForm />, },
-// ]);
-
 createRoot(document.querySelector('#app')).render(<RouterProvider router={router} />)
-
-// createRoot(document.querySelector('#app')).render(<HomePage />);

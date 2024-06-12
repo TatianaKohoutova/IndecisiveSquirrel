@@ -6,9 +6,10 @@ import { Button } from '../Components/Button'
 
 export const RecepyPage = () => {
     const { recepyId } = useParams()
-    const amountOfPortions = recipes[recepyId].portions
-    const preparationTime = recipes[recepyId].preparationTime
-    const timeUnit = recipes[recepyId].timeUnit
+    const recipe = recipes[recepyId] // Přidání konstanty recipe
+    const amountOfPortions = recipe.portions
+    const preparationTime = recipe.preparationTime
+    const timeUnit = recipe.timeUnit
     const [portions, setPortions] = useState(amountOfPortions)
 
     const handleRemovePortion = () => {
@@ -37,7 +38,7 @@ export const RecepyPage = () => {
             <div className="recepy-header bubble">
                 <img className="bubbleArrow_recepy" src="../img/Arrow.png" alt="Šipka k bublině" />
                 <h1 className="suggestion">Dneska vám doporučím....</h1>
-                <h2 className="recepy-title">{recipes[recepyId].title}</h2>
+                <h2 className="recepy-title">{recipe.title}</h2> {/* Použití recipe.title */}
             </div>
             <div className="recepy-detail text">
                 <div className="recepy-additional">
@@ -52,7 +53,7 @@ export const RecepyPage = () => {
                             <img className="recepy-additional--portionImg" src="/img/pocetPorci.png" alt="Porce" />
                             <h3>{portions}</h3>
                             <div className="btns"></div>
-                        </div>{' '}
+                        </div>
                         <div className="btn_navigation">
                             <Button ariaLabel={'Ubrat porci'} handleClick={handleRemovePortion} name={'-'} />
                             <Button
@@ -65,13 +66,16 @@ export const RecepyPage = () => {
                     <div className="recepy-additional__ingridients">
                         <h3>Ingredience</h3>
                         <ul>
-                            {recipes[recepyId].ingredients.map((list) => (
+                            {recipe.ingredients.map((list) => (
                                 <li key={list.name}>
-                                {list.amount
-                                    ? `${(list.amount / amountOfPortions) * portions} ${getUnitLabel((list.amount / amountOfPortions) * portions, list.unit)} `
-                                    : 'Podle potřeby '}
-                                {list.name}
-                            </li>
+                                    {list.amount
+                                        ? `${(list.amount / amountOfPortions) * portions} ${getUnitLabel(
+                                              (list.amount / amountOfPortions) * portions,
+                                              list.unit
+                                          )} `
+                                        : 'Podle potřeby '}
+                                    {list.name}
+                                </li>
                             ))}
                         </ul>
                     </div>
@@ -79,7 +83,7 @@ export const RecepyPage = () => {
                 <div className="recepy-todo">
                     <h3>Jak na to?</h3>
                     <ol className="recept_toto--text">
-                        {recipes[recepyId].process.map((step) => (
+                        {recipe.process.map((step) => (
                             <li key={step}>{step}</li>
                         ))}
                     </ol>

@@ -14,7 +14,6 @@
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 40px;
-
 }
 
 .suggestion {
@@ -24,7 +23,6 @@
 }
 
 .recepy-title {
-
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Titan One", sans-serif;
@@ -49,25 +47,13 @@
   .btn_navigation {
     flex-direction: column;
   }
-
-  .recepy-detail {
-    flex-direction: column;
-  }
-
-  .recepy-additional {
-    order: 1;
-  }
-
-  .recepy-todo {
-    order: 2;
-  }
 }
 
 /* RECEPY DETAIL */
 .recepy-detail {
   padding: 30px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column; /* Změněno na column, aby byly prvky vždy pod sebou */
   gap: 30px;
   flex-wrap: wrap;
   overflow: hidden;
@@ -91,6 +77,9 @@
 
 .recepy-additional {
   flex: 1;
+  display: flex;
+  flex-direction: row; /* Změněno na column, aby byly prvky vždy pod sebou */
+  gap: 20px;
 }
 
 .recepy-additional--watchImg,
@@ -136,4 +125,38 @@ li {
 
 .btn_navigation {
   display: flex;
+  flex-direction: row; /* Zůstává jako row, aby byly tlačítka vedle sebe */
+}
+
+.recepy-additional__ingridients {
+  display: flex;
+  flex-direction: column; /* Změněno na column, aby byly prvky vždy pod sebou */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .bubbleArrow_recepy {
+    display: none;
+  }
+
+  .recepy-header {
+    margin-top: 30px;
+  }
+
+  .suggestion {
+    margin-top: 20px;
+  }
+
+  .btn_navigation {
+    flex-direction: column;
+  }
+
+  .recepy-detail {
+    padding: 15px;
+  }
+
+  .recepy-additional__time,
+  .recepy-additional__portions {
+    flex-direction: column;
+  }
 }

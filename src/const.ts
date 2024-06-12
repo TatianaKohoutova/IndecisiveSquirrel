@@ -8,7 +8,8 @@ export enum Units {
     Piece = 'Piece',
     Handful = 'Handful',
     Pinch = 'Pinch',
-    Need = 'Need'
+    Need = 'Need',
+    Cm = 'Cm',
 }
 
 export const UnitsMap = {
@@ -21,7 +22,8 @@ export const UnitsMap = {
     [Units.Piece]: 'ks',
     [Units.Handful]: 'hrst',
     [Units.Pinch]: 'špetka',
-    [Units.Need]: 'Podle potřeby'
+    [Units.Need]: 'Podle potřeby',
+    [Units.Cm]: 'cm',
 }
 
 export enum Calories {

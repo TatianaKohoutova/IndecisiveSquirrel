@@ -7,9 +7,9 @@ export const AboutUs = () => (
             <div className="main_content_about">
                 <h3>O nás</h3>
                 <p className="main_paragraph">
-                    Jsme tři poblázněné super holky jménem Bára, Táňa a Jana. I přesto, že naše cesty byly rozdílné,
-                    přivedly nás ke společné zálibě – programování. Nyní spolu tvoříme úžasný projekt, do kterého jsme
-                    se zamilovaly. Přesvědčte se, jak je skvělý.
+                    Jsme tři poblázněné super holky - Bára, Táňa a Jana. Přestože naše cesty byly rozdílné,
+                    nakonec nás přivedly ke společné zálibě – programování. Nyní spolu tvoříme úžasný projekt, do kterého jsme
+                    se zamilovaly. Přesvědč se, jak je skvělý.
                 </p>
             </div>
             <div className="photo">
@@ -25,19 +25,19 @@ export const AboutUs = () => (
                 </div>
                 <p className="about_person">
                     Jsem mamka a vášnivá kuchařka. Tyhle dvě věci jdou skvěle dohromady. Několikaletá odmlka v práci
-                    rozhodila to, kdo vlastně jsem a tak se snažím svoje já zase najít. Přiznám se, že je to celkém
+                    rozhodila to, kdo vlastně jsem a tak se snažím svoje já zase najít. Přiznám se, že je to celkem
                     zábavné hledání. Mé já začíná získávat podobu a tento projekt je toho důkazem.
                 </p>
             </div>
             <div className="card_person">
                 <div className="header_us">
                     <img className="image_person" src="../img/tana.JPG" alt="Táňa" />
-                    <h3 className="header_person">Tátiana Kohoutová</h3>
+                    <h3 className="header_person">Tatiana Kohoutová</h3>
                 </div>
                 <p className="about_person">
-                    Jsem bývalá veterinářka, která se rozhodla ke změně a dostala se k project managementu digitálních
-                    nástrojů a webovek pro veterináře. Svět web developtmentu a programování mě obrovský zaujal a další
-                    bádání v této oblasti vedlo ke vzniku i této stránky.
+                    Jsem bývalá veterinářka, která se rozhodla pro změnu a dostala se k project managementu digitálních
+                    nástrojů a webovek pro veterináře. Svět web developtmentu a programování mě neskutečně zaujal a další
+                    bádání v této oblasti vedlo i ke vzniku naší aplikace.
                 </p>
             </div>
             <div className="card_person">
@@ -46,9 +46,8 @@ export const AboutUs = () => (
                     <h3 className="header_person">Jana Jarošová</h3>
                 </div>
                 <p className="about_person">
-                    Původní profesí jsem výtvarnice, hlavně ilustrátorka a autorka komiksů. Postupně jsem se během let
-                    ale dostala spíše k organizaci kulturních akcí, roky jsem pracovala na pozicích kurátorky, produkční
-                    a dramaturgyně. Teď jsem ale našla novou vášeň v programování.
+                    Původní profesí jsem výtvarnice, hlavně ilustrátorka a autorka komiksů. Postupně jsem se ale během let dostala spíše k organizaci kulturních akcí, roky jsem pracovala na pozicích kurátorky, produkční
+                    a dramaturgyně. Teď jsem našla novou vášeň v programování.
                 </p>
             </div>
         </div>

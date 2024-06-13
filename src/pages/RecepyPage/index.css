@@ -53,7 +53,8 @@
 .recepy-detail {
   padding: 30px;
   display: flex;
-  flex-direction: column; /* Změněno na column, aby byly prvky vždy pod sebou */
+  flex-direction: column;
+  /* Změněno na column, aby byly prvky vždy pod sebou */
   gap: 30px;
   flex-wrap: wrap;
   overflow: hidden;
@@ -78,14 +79,15 @@
 .recepy-additional {
   flex: 1;
   display: flex;
-  flex-direction: column; /* Změněno na column, aby byly prvky vždy pod sebou */
+  flex-direction: row;
+  /* Změněno na column, aby byly prvky vždy pod sebou */
   gap: 20px;
 }
 
 .recepy-additional--watchImg,
 .recepy-additional--portionImg {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
 }
 
 .recepy-additional__time,
@@ -106,31 +108,26 @@ li {
   font-size: 1.2em;
 }
 
-.recepy-additional__time>h3 {
-  padding: 0;
-  margin: 0;
-}
 
-.recepy-additional__portions>h3 {
-  padding: 0;
-  margin: 0;
-}
 
 /* BUTTONS TO ADD OR REMOVE PORTION */
 .recepy_info_icons {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
 }
 
 .btn_navigation {
   display: flex;
-  flex-direction: row; /* Zůstává jako row, aby byly tlačítka vedle sebe */
+  flex-direction: row;
 }
 
 .recepy-additional__ingridients {
   display: flex;
-  flex-direction: column; /* Změněno na column, aby byly prvky vždy pod sebou */
+  flex-direction: column;
 }
 
 /* Media Queries for Responsiveness */
@@ -139,34 +136,44 @@ li {
     display: none;
   }
 
-  .recepy-header {
-    margin-top: 30px;
+  .recepy-info_icons {
+    font-size: 0.6em;
   }
 
-  .suggestion {
-    margin-top: 20px;
-  }
-
-  .btn_navigation {
-    flex-direction: column;
-  }
-
-  .recepy-detail {
-    padding: 15px;
-  }
-
-  .recepy-additional {
-    gap: 10px;
+  .recepy-additional--watchImg,
+  .recepy-additional--portionImg {
+    width: 20px;
+    height: 20px;
   }
 
   .recepy-additional__time,
   .recepy-additional__portions {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
   }
 
-  .recepy-additional__time h3,
-  .recepy-additional__portions h3 {
-    margin: 5px 0;
+  .recepy-additional {
+    flex-direction: column; 
   }
+
+  .recepy-header {
+    margin-top: 20px;
+  }
+
+  .suggestion {
+    margin-top: 10px;
+  }
+
+  .btn_navigation {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .recepy-detail {
+    padding: 10px;
+  }
+ 
 }

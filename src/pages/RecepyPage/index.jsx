@@ -29,15 +29,22 @@ export const RecepyPage = () => {
             } else {
                 return 'lžičky'
             }
+        } else if (unit === 'lžíce') {
+            if (amount >= 5) {
+                return 'lžic'
+            } else {
+                return 'lžíce'
+            }
         }
         return unit
     }
+
 
     return (
         <div>
             <div className="recepy-header bubble">
                 <img className="bubbleArrow_recepy" src="../img/Arrow.png" alt="Šipka k bublině" />
-                <h1 className="suggestion">Dneska vám doporučím....</h1>
+                <h1 className="suggestion">Dneska ti doporučím....</h1>
                 <h2 className="recepy-title">{recipe.title}</h2> {/* Použití recipe.title */}
             </div>
             <div className="recepy-detail text">

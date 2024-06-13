@@ -9,8 +9,8 @@ export const Main = () => (
             <div className="text">
                 <div className="main_content">
                     <p>
-                        Vítáme Vás na naší webové aplikaci, která Vám změní život k lepšímu a ušetří spoustu času.
-                        Cítíme Vaše nadšení.
+                        Vítáme tě na své aplikaci, která ti změní život k lepšímu a ušetří spoustu času.
+                        Cítíme tvoje nadšení.
                         <br />
                         Tak pojďme na to.
                     </p>

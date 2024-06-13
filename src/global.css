@@ -31,6 +31,11 @@ a {
   padding-bottom: 65px;
 }
 
+.content-container {
+  flex: 1;
+  padding-bottom: 65px;
+}
+
 .full-height {
   min-height: 100vh;
 }
@@ -76,7 +81,7 @@ h2 {
 }
 
 h3 {
-font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 

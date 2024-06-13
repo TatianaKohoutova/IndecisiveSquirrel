@@ -1,26 +1,62 @@
 .salty {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .vege-section,
-maet-section {
+.meat-section {
   display: flex;
   flex-direction: column;
-  margin: 0 10px; 
+  margin: 0 10px;
 }
 
 .salty ul {
-  list-style: none; 
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .salty ul li a,
 .sweet ul li a {
-  font-size: 1em; 
+  font-size: 1em;
 }
 
 .vege-section ul, .meat-section ul {
-  list-style: disc;
+  list-style: inside;
+}
+
+/* Media query pro obrazovky menší než 768px (mobilní zařízení) */
+@media (max-width: 768px) {
+  .salty {
+    flex-direction: column;
+  }
+
+  .vege-section,
+  .meat-section {
+    margin: 10px 0;
+  }
+
+  .salty ul li a,
+  .sweet ul li a {
+    font-size: 1.2em;
+  }
+}
+
+/* Media query pro obrazovky větší než 768px (tablety a větší zařízení) */
+@media (min-width: 769px) {
+  .salty {
+    flex-direction: row;
+  }
+
+  .vege-section,
+  .meat-section {
+    margin: 0 10px;
+  }
+
+  .salty ul li a,
+  .sweet ul li a {
+    font-size: 1em;
+  }
 }

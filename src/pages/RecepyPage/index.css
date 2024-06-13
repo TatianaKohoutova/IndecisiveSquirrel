@@ -78,7 +78,7 @@
 .recepy-additional {
   flex: 1;
   display: flex;
-  flex-direction: row; /* Změněno na column, aby byly prvky vždy pod sebou */
+  flex-direction: column; /* Změněno na column, aby byly prvky vždy pod sebou */
   gap: 20px;
 }
 
@@ -155,8 +155,18 @@ li {
     padding: 15px;
   }
 
+  .recepy-additional {
+    gap: 10px;
+  }
+
   .recepy-additional__time,
   .recepy-additional__portions {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recepy-additional__time h3,
+  .recepy-additional__portions h3 {
+    margin: 5px 0;
   }
 }

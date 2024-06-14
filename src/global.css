@@ -29,11 +29,14 @@ a {
   border-right: 0.5px solid #D6B394;
   position: relative;
   padding-bottom: 65px;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .content-container {
   flex: 1;
   padding-bottom: 65px;
+  padding-top: 30px;
 }
 
 .full-height {

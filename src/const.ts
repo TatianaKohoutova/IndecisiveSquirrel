@@ -88,7 +88,7 @@ export enum Cost {
 }
 
 export const CostMap = {
-    [Cost.Low]: 'Veganské',
+    [Cost.Low]: 'Low',
     [Cost.Hight]: 'Hight',
 }
 

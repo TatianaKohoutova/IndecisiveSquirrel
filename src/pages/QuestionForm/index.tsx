@@ -26,7 +26,7 @@ export const QuestionForm = () => {
 
     const questionsCount = questions.length
 
-    const isQuestionAnswered = !state[id]
+    const isQuestionNotAnswered = !state[id]
 
     const handleForwardClick = () => {
         navigate('/questionForm/' + (Number(questionId) + 1))
@@ -72,14 +72,14 @@ export const QuestionForm = () => {
                     ariaLabel={'Zobrazit výsledek'}
                     name={'Vyhodnotit'}
                     handleClick={handleResultClick}
-                    disabled={isQuestionAnswered}
+                    disabled={isQuestionNotAnswered}
                 />
             ) : (
                 <Button
                     ariaLabel={'Další otázka'}
                     name={'Vpřed'}
                     handleClick={handleForwardClick}
-                    disabled={isQuestionAnswered}
+                    disabled={isQuestionNotAnswered}
                 />
             )}
         </div>

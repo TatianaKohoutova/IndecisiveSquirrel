@@ -25,7 +25,7 @@ export const showSelectedRecepy = (usersReplies) => {
     }
 
     if (filteredRecepies.length === 0) {
-        filteredRecepies = recepyArray.filter((recepy) => String(recepy.type) === String(usersReplies.type))
+        filteredRecepies = recepyArray.filter((recepy) => recepy.type === usersReplies.type)
     }
 
     const filteredRecepy = filteredRecepies[Math.floor(Math.random() * filteredRecepies.length)]

@@ -9,10 +9,13 @@ import './style.css'
 import React from 'react'
 
 const defaultState = { type: null, taste: null, calories: null, isLowCost: null }
+const storageKey = 'repliesState'
 
 export const QuestionForm = () => {
     const { questionId } = useParams()
-    const [state, setState] = useState(defaultState)
+    const savedState = localStorage.getItem(storageKey)
+    const savedStateParsed = savedState && JSON.parse(savedState)
+    const [state, setState] = useState(savedStateParsed || defaultState)
 
     const navigate = useNavigate()
     if (!questionId) {
@@ -34,11 +37,13 @@ export const QuestionForm = () => {
     }
 
     const handleResultClick = () => {
+        localStorage.setItem(storageKey, JSON.stringify(null))
         const urlAddressPart = showSelectedRecepy(state).id
         navigate(`/recepy/${urlAddressPart}`)
     }
 
     const handleClick = ({ valueId, value }) => {
+        localStorage.setItem(storageKey, JSON.stringify({ ...state, [valueId]: value }))
         setState({ ...state, [valueId]: value })
     }
 

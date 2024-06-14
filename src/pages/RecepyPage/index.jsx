@@ -39,13 +39,16 @@ export const RecepyPage = () => {
         return unit
     }
 
+    const formatAmount = (amount) => {
+        return amount % 1 === 0 ? amount : amount.toFixed(2)
+    }
 
     return (
         <div>
             <div className="recepy-header bubble">
                 <img className="bubbleArrow_recepy" src="../img/Arrow.png" alt="Šipka k bublině" />
                 <h1 className="suggestion">Dneska ti doporučím....</h1>
-                <h2 className="recepy-title">{recipe.title}</h2> {/* Použití recipe.title */}
+                <h2 className="recepy-title">{recipe.title}</h2> 
             </div>
             <div className="recepy-detail text">
                 <div className="recepy-additional">
@@ -76,7 +79,7 @@ export const RecepyPage = () => {
                             {recipe.ingredients.map((list) => (
                                 <li key={list.name}>
                                     {list.amount
-                                        ? `${(list.amount / amountOfPortions) * portions} ${getUnitLabel(
+                                        ? `${formatAmount((list.amount / amountOfPortions) * portions)} ${getUnitLabel(
                                               (list.amount / amountOfPortions) * portions,
                                               list.unit
                                           )} `

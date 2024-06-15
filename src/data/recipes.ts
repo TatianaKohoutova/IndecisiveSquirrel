@@ -487,7 +487,7 @@ export const recipes = {
         calories: Calories.Medium,
         title: 'Butter chicken',
         portions: 4,
-        preparationTime: 'marinování: přes noc, vaření: 40',
+        preparationTime: 'marinování přes noc + 40',
         timeUnit: 'min',
         process: [
             'Kuřecí prsa nakrájej na kostky o velikosti cca 5 cm. Suroviny na marinádu smíchej ve větší míse společně s nakrájeným kuřetem. Marinuj minimálně 3 hodiny, nejlépe přes noc.',

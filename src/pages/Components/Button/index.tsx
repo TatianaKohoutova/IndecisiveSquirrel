@@ -6,6 +6,7 @@ interface ButtonProps {
     handleClick: () => void
     name: string
     disabled?: boolean
+    className?: string
 }
 
 export const Button = ({ ariaLabel, handleClick, name, disabled }: ButtonProps) => {

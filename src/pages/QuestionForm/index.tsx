@@ -8,14 +8,19 @@ import { showSelectedRecepy } from './helpers'
 import './style.css'
 import React from 'react'
 
-const defaultState = { type: null, taste: null, calories: null, isLowCost: null }
-const storageKey = 'repliesState'
+interface State {
+    type: string | null
+    taste: string | null
+    calories: string | null
+    isLowCost: boolean | null
+    [key: string]: any
+}
+
+const defaultState: State = { type: null, taste: null, calories: null, isLowCost: null }
 
 export const QuestionForm = () => {
     const { questionId } = useParams()
-    const savedState = localStorage.getItem(storageKey)
-    const savedStateParsed = savedState && JSON.parse(savedState)
-    const [state, setState] = useState(savedStateParsed || defaultState)
+    const [state, setState] = useState(defaultState)
 
     const navigate = useNavigate()
     if (!questionId) {
@@ -26,7 +31,7 @@ export const QuestionForm = () => {
 
     const questionsCount = questions.length
 
-    const isQuestionNotAnswered = !state[id]
+    const isQuestionAnswered = !state[id]
 
     const handleForwardClick = () => {
         navigate('/questionForm/' + (Number(questionId) + 1))
@@ -37,13 +42,11 @@ export const QuestionForm = () => {
     }
 
     const handleResultClick = () => {
-        localStorage.setItem(storageKey, JSON.stringify(null))
         const urlAddressPart = showSelectedRecepy(state).id
         navigate(`/recepy/${urlAddressPart}`)
     }
 
     const handleClick = ({ valueId, value }) => {
-        localStorage.setItem(storageKey, JSON.stringify({ ...state, [valueId]: value }))
         setState({ ...state, [valueId]: value })
     }
 
@@ -72,14 +75,14 @@ export const QuestionForm = () => {
                     ariaLabel={'Zobrazit výsledek'}
                     name={'Vyhodnotit'}
                     handleClick={handleResultClick}
-                    disabled={isQuestionNotAnswered}
+                    disabled={isQuestionAnswered}
                 />
             ) : (
                 <Button
                     ariaLabel={'Další otázka'}
                     name={'Vpřed'}
                     handleClick={handleForwardClick}
-                    disabled={isQuestionNotAnswered}
+                    disabled={isQuestionAnswered}
                 />
             )}
         </div>

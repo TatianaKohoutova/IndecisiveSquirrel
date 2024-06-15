@@ -31,7 +31,7 @@
   margin-right: 0;
 }
 
-/* Styly pro hamburger menu */
+
 .hamburger-menu {
   display: none;
   cursor: pointer;
@@ -55,9 +55,9 @@
     width: 200px;
     height: 100%;
     align-items: flex-start;
-    /* Přidáno pro zarovnání nalevo */
+  
     padding-left: 20px;
-    /* Přidáno pro odsazení od levého okraje */
+
   }
 
   .line_open {

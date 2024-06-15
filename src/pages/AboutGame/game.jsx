@@ -14,7 +14,7 @@ export const AboutGame = () => (
                     Pravidla hry jsou snadná. Mám pro tebe několik jednoduchých otázek, u každé zvol z nabízených odpovědí tu, která ti bude nejbližší. Na základě toho ti vyberu, na co bys mohl mít chuť. Pokud by ti nabízený recept nevyhovoval, v menu najdeš další skvělé recepty. Přeji ti příjemnou zábavu a dobrou chuť.
                     </p>
                     <Link className=" button" to="/questionForm/0">
-                        Hrát hru
+                        Na co mám chuť?
                     </Link>
 
                     <img src="../img/Volba.png" alt="Volba" className="img_cornerSquirrel" />

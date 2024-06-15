@@ -54,6 +54,10 @@
     flex-direction: column;
     width: 200px;
     height: 100%;
+    align-items: flex-start;
+    /* Přidáno pro zarovnání nalevo */
+    padding-left: 20px;
+    /* Přidáno pro odsazení od levého okraje */
   }
 
   .line_open {
@@ -62,5 +66,11 @@
 
   .hamburger-menu {
     display: block;
+  }
+
+  menu a {
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
   }
 }

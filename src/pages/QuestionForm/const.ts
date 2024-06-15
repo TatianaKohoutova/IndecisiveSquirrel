@@ -5,7 +5,7 @@ import { Calories, Taste, Spicy, Type, ActivityType, Difficulty, Cost } from '..
 export const questions = [
     {
         id: 'type',
-        title: 'Jaký typ jídla by ti pro dnešek vyhovoval?',
+        title: 'Máš dneska chuť na něco vegetariánského nebo masového?',
         options: [
             // { description: 'Veganské', img: '', value: Type.Vegan },
             { description: 'Vegetariánské', img: '/img/ikons-questions/type/Vege.png', value: Type.Vegetarian },
@@ -23,7 +23,7 @@ export const questions = [
     },
     {
         id: 'calories',
-        title: 'Jak moc chceš dnes hřešit?',
+        title: 'Jak moc kalorické jídlo chceš?',
         options: [
             {
                 description: 'Vůbec. Chci něco zdravého',
@@ -58,7 +58,7 @@ export const questions = [
             },
         ],
     },
-    //     id: 'spacy',
+    //     id: 'spicy',
     //     title: 'Jak pálivé jídlo chceš?',
     //     options: [
     //         { description: 'Chci nepálivé.', img: '', value: '' },

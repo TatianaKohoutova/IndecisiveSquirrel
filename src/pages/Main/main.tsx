@@ -9,8 +9,8 @@ export const Main = () => (
             <div className="text">
                 <div className="main_content">
                     <p>
-                        Vítáme tě na své aplikaci, která ti změní život k lepšímu a ušetří spoustu času.
-                        Cítíme tvoje nadšení.
+                        Vítáme tě na své aplikaci, která ti změní život k lepšímu a ušetří spoustu času. Cítíme tvoje
+                        nadšení.
                         <br />
                         Tak pojďme na to.
                     </p>
@@ -18,8 +18,8 @@ export const Main = () => (
                         <Link className="button" to="./about">
                             Kdo jsme?
                         </Link>
-                        <Link className="button" to="./game">
-                            Hrát hru
+                        <Link className="button" to="./questionForm/0">
+                            Co si dám?
                         </Link>
                     </div>
                 </div>

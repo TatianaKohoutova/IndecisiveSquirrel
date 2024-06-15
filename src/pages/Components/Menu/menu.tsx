@@ -20,7 +20,7 @@ export const Header = () => {
             <Link to="./" className="logo"></Link>
             <div className={`menu ${menuOpen && 'menu_open'}`}>
                 <MenuItem link={'./'} text={'Domů'} handleClick={handleClickItem} />
-                <MenuItem link={'/game'} text={'Hrát'} handleClick={handleClickItem} />
+                <MenuItem link={'/game'} text={'O co jde?'} handleClick={handleClickItem} />
                 <MenuItem link={'./about'} text={'O nás'} handleClick={handleClickItem} />
                 <MenuItem link={'./recepyList'} text={'Recepty'} handleClick={handleClickItem} />
             </div>

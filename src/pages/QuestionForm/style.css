@@ -39,7 +39,6 @@ body {
   height: 200px;
   background-color: transparent;
   perspective: 1000px;
-  /* border: 2px solid transparent; */
 
   &:hover {
     .card {
@@ -47,7 +46,13 @@ body {
     }
   }
 
-
+  .button-container-top,
+  .button-container-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
 
 }
 
@@ -99,11 +104,14 @@ body {
 }
 
 
-
 @media (max-width: 768px) {
   body {
     background-color: #934324;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
   }
+
 
   .main {
     -webkit-box-shadow: none;
@@ -120,11 +128,40 @@ body {
     margin-right: 20px;
   }
 
-
   .question-form {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 10px;
     width: 100%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+
+  .button-container-top {
+    order: -1;
+    margin-bottom: 10px;
+  }
+
+
+  .cardcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-container-bottom {
+    margin-top: 10px;
+  }
+
+  .container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card {
+    height: 150px;
   }
 }

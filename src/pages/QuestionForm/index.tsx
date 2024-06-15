@@ -54,6 +54,11 @@ export const QuestionForm = () => {
         <div className="question-form">
             <h3>{title}</h3>
             <Stepper />
+            {Number(questionId) === 0 ? null : (
+                <div className="button-container-top">
+                    <Button className="button-back" ariaLabel={'Předchozí otázka'} name={'Zpět'} handleClick={handleBackwardClick} />
+                </div>
+            )}
             <div className="cardcontainer">
                 {options.map(({ value, description, img }) => (
                     <AnswerCard
@@ -67,24 +72,25 @@ export const QuestionForm = () => {
                     />
                 ))}
             </div>
-            {Number(questionId) === 0 ? null : (
-                <Button ariaLabel={'Předchozí otázka'} name={'Nazpět'} handleClick={handleBackwardClick} />
-            )}
-            {Number(questionId) === questionsCount - 1 && true ? (
-                <Button
-                    ariaLabel={'Zobrazit výsledek'}
-                    name={'Vyhodnotit'}
-                    handleClick={handleResultClick}
-                    disabled={isQuestionAnswered}
-                />
-            ) : (
-                <Button
-                    ariaLabel={'Další otázka'}
-                    name={'Vpřed'}
-                    handleClick={handleForwardClick}
-                    disabled={isQuestionAnswered}
-                />
-            )}
+            <div className="button-container-bottom">
+                {Number(questionId) === questionsCount - 1 && true ? (
+                    <Button
+                        className="button-result"
+                        ariaLabel={'Zobrazit výsledek'}
+                        name={'Vyhodnotit'}
+                        handleClick={handleResultClick}
+                        disabled={isQuestionAnswered}
+                    />
+                ) : (
+                    <Button
+                        className="button-next"
+                        ariaLabel={'Další otázka'}
+                        name={'Další'}
+                        handleClick={handleForwardClick}
+                        disabled={isQuestionAnswered}
+                    />
+                )}
+            </div>
         </div>
     )
 }

@@ -132,7 +132,6 @@ a {
   font-size: 1.6em;
   display: inline-block;
   background-color: #3C2B14;
-  /* width: 180px; */
   padding: 0 30px;
   line-height: 37px;
   border-radius: 45px;
@@ -150,17 +149,12 @@ a {
   position: absolute;
 }
 
-/* .footer {
-  position: fixed;
-  bottom: 10px;
-  right: 50px;
-} */
 
 @media (max-width: 768px) {
   body {
     background-color: #934324;
     min-width: auto;
-    /* Přidáno */
+
   }
 
   .main {
@@ -170,9 +164,8 @@ a {
     border-left: none;
     border-right: none;
     width: 100%;
-    /* Přidáno */
     padding: 0 20px;
-    /* Přidáno */
+
   }
 
   .text {
@@ -181,40 +174,49 @@ a {
     margin-left: 20px;
     margin-right: 20px;
     margin: auto;
-    /* Přidáno */
+
   }
 
   h1,
   h2,
   h3 {
-    font-size: 2em;
-    /* Přidáno */
     margin-top: 20px;
-    /* Přidáno */
     margin-bottom: 20px;
-    /* Přidáno */
   }
 
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  h1 {
+    font-size: 1.2em;
   }
 
-  .button {
-    min-width: 40%;
-    margin-top: 20px;
+  h2 {
+    font-size: 1em;
   }
 
-  .img_cornerSquirrel {
-    position: relative;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    -webkit-box-shadow: 0px 10px 50px 8px #3C2B14;
-    -moz-box-shadow: 0px 10px 50px 8px #3C2B14;
-    box-shadow: 0px 10px 50px 8px #3C2B14;
+  h3 {
+    font-size: 0.8em;
   }
+
+}
+
+.buttons {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.button {
+  min-width: 40%;
+  margin-top: 20px;
+}
+
+.img_cornerSquirrel {
+  position: relative;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 10px 50px 8px #3C2B14;
+  -moz-box-shadow: 0px 10px 50px 8px #3C2B14;
+  box-shadow: 0px 10px 50px 8px #3C2B14;
 }

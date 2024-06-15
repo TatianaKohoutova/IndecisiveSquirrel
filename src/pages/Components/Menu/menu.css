@@ -55,7 +55,7 @@
     width: 200px;
     height: 100%;
     align-items: flex-start;
-  
+
     padding-left: 20px;
 
   }
@@ -72,8 +72,5 @@
     text-align: left;
     width: 100%;
     padding: 10px 0;
-  }
-  .header {
-    max-height: 90px;
   }
 }
